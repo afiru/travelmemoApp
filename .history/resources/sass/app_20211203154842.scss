@@ -1,0 +1,20 @@
+.postUnderNv {
+    width: 180px;
+    top: 101%;
+    background: #CCC;
+    color: #FFF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.buttonUnderNav {
+    padding: 10px;
+    display: block;
+    color: #000;
+    bottom: 1px solid #ccc;
+    font-size: 12px;
+    font-weight: 500;
+    transition-duration: 0.5s;
+    &:hover {
+        opacity: 0.6;
+    }
+}
