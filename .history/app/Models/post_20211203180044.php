@@ -10,8 +10,8 @@ class Post extends Model
     use HasFactory;
     protected $guarded = array('id');
 
-    const CREATED_AT = 'postDate';
-    const UPDATED_AT = 'postModified';
+    const CREATED_AT = 'post_date';
+    const UPDATED_AT = 'post_modified';
 
     public static $rules = [
         'travelDate' => 'required',

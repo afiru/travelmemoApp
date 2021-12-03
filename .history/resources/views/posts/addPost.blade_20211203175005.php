@@ -9,7 +9,7 @@
             <form action="{{ route('addpost') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <input type="hidden" name="post_author" value="{{ Auth::id() }}">
-
+                <input type="hidden" name="point_sum" value="0">
                 <section class="md:grid md:grid-cols-3 md:gap-6 PostAdd">
                     <x-post.add-post-title form-title="行きたい場所候補を投稿！" form-discription="道後温泉で「ここ行くべきやろー！！」ってところをどんどん入れていきましょうー"></x-post.add-post-title>
                     <x-post.add-post-form data=""></x-post.add-post-form>
@@ -19,7 +19,6 @@
                         この場所を候補に入れる！
                     </button>
                 </div>
-                <input type="hidden" name="point_sum" value="0">
             </form>
 
         </div>

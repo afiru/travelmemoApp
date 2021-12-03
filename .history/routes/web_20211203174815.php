@@ -19,7 +19,7 @@ Route::get('/', function () {
 use App\Http\Controllers\post\PostsController;
 Route::get('/posts', [PostsController::class, 'index'])->name('posts')->middleware('auth');
 Route::get('/addpost', [PostsController::class, 'addPost'])->name('addpost')->middleware('auth');
-Route::post('/addpost',[PostsController::class, 'create'])->middleware('auth');
+Route::post('/addpost',[CreatePostController::class, 'create'])->middleware('auth');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

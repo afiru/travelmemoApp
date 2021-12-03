@@ -20,8 +20,6 @@ class PostsController extends Controller
         $post = new Post;
         $data = $request->all();
         unset($data['_token']);unset($data['post_author']);
-        $post->fill($data)->save();
-        print_r($data);
     }
 
     function addPost()
