@@ -12,9 +12,7 @@ class PostsController extends Controller
     public function index(Request $request)
     {
         $orderby = empty($request->orderby) ? 'id' : $request->orderby;
-        $order = empty($request->order) ? 'asc' : $request->order;
-        $data = Post::get();
-        return view('posts.post',['data' => $data]);
+        $order = empty($request->order) ? 'id' : $request->order;
     }
 
     public function create(Request $request)
