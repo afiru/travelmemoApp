@@ -11,7 +11,12 @@
                     <h2 class="font-semibold mt-2 text-2xl">
                         行きたいところリスト検索
                     </h2>
-                    <x-post.add-posts-search></x-post.add-posts-search>
+                    <form action="{{ route('posts') }}" method="post" enctype="multipart/form-data">
+                        @csrf
+                    </form>
+                    <div class="mt-2 flex justify-start text-gray-500">
+
+                    </div>
                 </section>
             </div>
         </div>

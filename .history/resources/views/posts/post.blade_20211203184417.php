@@ -11,7 +11,8 @@
                     <h2 class="font-semibold mt-2 text-2xl">
                         行きたいところリスト検索
                     </h2>
-                    <x-post.add-posts-search></x-post.add-posts-search>
+
+
                 </section>
             </div>
         </div>

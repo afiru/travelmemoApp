@@ -12,6 +12,7 @@
                         行きたいところリスト検索
                     </h2>
                     <x-post.add-posts-search></x-post.add-posts-search>
+
                 </section>
             </div>
         </div>

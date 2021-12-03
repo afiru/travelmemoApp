@@ -9,9 +9,11 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <section class="p-9 sm:px-8 bg-white border-b border-gray-200">
                     <h2 class="font-semibold mt-2 text-2xl">
-                        行きたいところリスト検索
+                        行きたいところリスト
                     </h2>
-                    <x-post.add-posts-search></x-post.add-posts-search>
+                    <div class="mt-2 flex justify-start text-gray-500">
+
+                    </div>
                 </section>
             </div>
         </div>
