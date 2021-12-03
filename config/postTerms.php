@@ -1,3 +1,4 @@
+<?php
 return [
     'parentTerms'=>[
         'gourmet'=>'グルメ',
