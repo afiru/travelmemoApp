@@ -4,9 +4,7 @@
             <option value="{{ $key }}">{{ $value }}</option>
         @endforeach
     @else
-        @foreach (config('postTerms.subTerms')  as $key => $value)
-            <option value="{{ $key }}">{{ $value }}</option>
-        @endforeach
+
     @endif
 
 </select>

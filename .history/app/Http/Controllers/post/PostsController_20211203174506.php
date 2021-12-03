@@ -13,15 +13,9 @@ class PostsController extends Controller
     {
 
     }
-
-    public function create(Request $request)
+    public function create()
     {
-        $this->validate($request,Post::$rules);
-        $post = new Post;
-        $data = $request->all();
-        unset($data['_token']);unset($data['post_author']);
-        $post->fill($data)->save();
-        print_r($data);
+
     }
 
     function addPost()

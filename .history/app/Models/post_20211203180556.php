@@ -10,7 +10,7 @@ class Post extends Model
     use HasFactory;
     protected $guarded = array('id');
 
-    const CREATED_AT = 'postDate';
+    const CREATED_AT = 'post_date';
     const UPDATED_AT = 'postModified';
 
     public static $rules = [
