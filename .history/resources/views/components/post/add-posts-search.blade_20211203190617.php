@@ -20,7 +20,7 @@
             <input class="mt-2 py-2 px-2 rounded-md shadow border-gray-300  w-full" type="text" name="placeName" placeholder="場所名を入れてー" value="{{ old('placeName') }}">
         </div>
     </div>
-    <div class="mt-4 w-full">
+    <div class="mt-2 w-full">
         <button type="submit" class="w-full justify-center inline-flex items-center px-4 py-4 bg-gray-800 border border-transparent rounded-md font-semibold text-lg text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition">
             検索する
         </button>
