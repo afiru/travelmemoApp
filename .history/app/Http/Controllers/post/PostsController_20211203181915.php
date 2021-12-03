@@ -14,7 +14,7 @@ class PostsController extends Controller
         $orderby = empty($request->orderby) ? 'id' : $request->orderby;
         $order = empty($request->order) ? 'asc' : $request->order;
         $data = Post::get();
-        return view('posts.post',['data' => $data]);
+        print_r();
     }
 
     public function create(Request $request)
