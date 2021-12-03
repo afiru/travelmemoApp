@@ -40,7 +40,8 @@
         <div class="grid grid-cols- gap-6 mt-8">
             <div class="col-span-6 sm:col-span-4 w-full">
                 <label class="block font-medium text-sm text-gray-700" for="name">ジャンルを選んでー</label>
-                <div class="w-2/12 lg:w-4/12"><x-post.add-post-form-genre name="term" data=""></x-post.add-post-form-genre></div>
+                <div class="w-2/12  lg:w-4/12"><x-post.add-post-form-genre name="term" data=""></x-post.add-post-form-genre></div>
+
             </div>
         </div>
         <div class="grid grid-cols- gap-6 mt-8">
