@@ -46,8 +46,7 @@ class PostsController extends Controller
     //新規投稿画面
     public function addPost()
     {
-        echo 'test';
-        //return view('posts.addPost');
+        return view('posts.addPost');
     }
     //新規投稿処理
     public function create(Request $request)
