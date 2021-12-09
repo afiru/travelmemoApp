@@ -29,9 +29,8 @@ Route::post('/post/{postid}', [PostsController::class, 'updatePost'])->name('edi
 Route::post('/bookmark', [PostsController::class, 'bookmark'])->middleware('auth');
 
 //トピックス
-Route::get('/hello', function () {
-    return redirect('/dashboard');
-});
+use App\Http\Controllers\HelloController;
+Route::post('/hello', [HelloController::class, 'index'])->middleware('auth');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
