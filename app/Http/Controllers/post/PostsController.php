@@ -5,7 +5,7 @@ namespace App\Http\Controllers\post;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 //Model
-use App\Models\Post;
+use App\Models\post;
 use App\Models\user_point;
 use Illuminate\Support\Facades\Auth;
 
