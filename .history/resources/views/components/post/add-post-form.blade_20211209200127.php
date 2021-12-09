@@ -101,7 +101,7 @@
                     @if(isset($datas->term))
                         <x-post.add-post-form-genre genre="term" name="term" datas="{{ $datas->term }}"></x-post.add-post-form-genre>
                     @else
-                        <x-post.add-post-form-genre genre="subterm" name="term" datas=""></x-post.add-post-form-genre>
+                        <x-post.add-post-form-genre genre="" name="term" datas=""></x-post.add-post-form-genre>
                     @endif
                 </div>
             </div>
