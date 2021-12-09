@@ -29,8 +29,7 @@ Route::post('/post/{postid}', [PostsController::class, 'updatePost'])->name('edi
 Route::post('/bookmark', [PostsController::class, 'bookmark'])->middleware('auth');
 
 //トピックス
-use App\Http\Controllers\HelloController;
-Route::post('/hello', 'App\Http\Controllers\HelloController@index')->middleware('auth');
+Route::post('/hello','App\Http\Controllers@index')->middleware('auth');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

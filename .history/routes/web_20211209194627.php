@@ -30,7 +30,7 @@ Route::post('/bookmark', [PostsController::class, 'bookmark'])->middleware('auth
 
 //トピックス
 use App\Http\Controllers\HelloController;
-Route::post('/hello', 'App\Http\Controllers\HelloController@index')->middleware('auth');
+Route::post('/hello', [HelloController::class, 'bookmark'])->middleware('auth');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
