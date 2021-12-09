@@ -17,8 +17,8 @@ Route::get('/', function () {
     return redirect('/dashboard');
 });
 Route::get('/hello','App\Http\Controllers\HelloController@index');
-Route::get('/posts', 'App\Http\Controllers\post\PostsController\PostsController@index')->name('posts')->middleware('auth');
-Route::post('/posts', [PostsController::class, 'delPost'])->middleware('auth');
+Route::get('/posts', 'App\Http\Controllers\post\PostsController@index')->name('posts')->middleware('auth');
+Route::post('/posts', 'App\Http\Controllers\post\PostsController@delPost')->middleware('auth');
 //新規投稿
 Route::get('/addpost', [PostsController::class, 'addPost'])->name('addpost')->middleware('auth');
 Route::post('/addpost',[PostsController::class, 'create'])->middleware('auth');
