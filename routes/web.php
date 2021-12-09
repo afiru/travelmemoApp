@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return redirect('/dashboard');
 });
-Route::get('/hello','HelloController@index');
+Route::get('/hello','App\Http\Controllers\HelloController@index');
 use App\Http\Controllers\post\PostsController;
 Route::get('/posts', [PostsController::class, 'index'])->name('posts')->middleware('auth');
 Route::post('/posts', [PostsController::class, 'delPost'])->middleware('auth');
