@@ -10941,9 +10941,10 @@ function set_csrftoken() {
 
 $(function () {
   $('.jsButtonPost').on('click', function () {
-    var id = $(this).data('id');
-    var target = '.' + $(this).data('target');
-    var apiUrl = "/bookmark";
+    id = $(this).data('id');
+    console.log(id);
+    target = '.' + $(this).data('target');
+    apiUrl = "/bookmark";
     $.ajaxSetup({
       headers: {
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

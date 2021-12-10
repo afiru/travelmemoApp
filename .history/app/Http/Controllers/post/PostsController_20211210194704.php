@@ -106,10 +106,7 @@ class PostsController extends Controller
     }
     private function postPointSum($id=0) :int
     {
-        $select = [
-            'id'=>$id,
-        ];
-        $data = Post::where('id',$select)->first();
+        $data = Post::find($id)->first();
         return $data->point_sum;
     }
     private function chackUserPost($user_id=0,$post_id='') :bool

@@ -109,7 +109,8 @@ class PostsController extends Controller
         $select = [
             'id'=>$id,
         ];
-        $data = Post::where('id',$select)->first();
+        $data = Post::wehere('id',$id)->first();
+        print_r($data);
         return $data->point_sum;
     }
     private function chackUserPost($user_id=0,$post_id='') :bool
