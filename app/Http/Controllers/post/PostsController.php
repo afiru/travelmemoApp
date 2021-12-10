@@ -116,17 +116,18 @@ class PostsController extends Controller
             'post_id' => $post_id
         ];
         $count = user_point::where($where)->count();
-        if($count>0){
-            return true;
-        }else {
+        if($count>=1){
             $insert =[
-                'user_id' =>1,
-                'post_id' => 2,
+                'user_id' =>Auth::id(),
+                'post_id' => $post_id,
                 'point' => 1,
             ];
             $user_point = new user_point;
             $user_point->fill($insert)->save();
             return false;
+        }else {
+            return true;
+
         }
     }
     private function updatePostPoint($id='',$count){
