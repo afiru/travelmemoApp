@@ -112,7 +112,7 @@ class PostsController extends Controller
     private function chackUserPost($user_id=0,$post_id='') :bool
     {
         $where = [
-            'user_id' =>$user_id,
+            'user_id' =>Auth::id(),
             'post_id' => $post_id
         ];
         $count = user_point::where($where)->count();
