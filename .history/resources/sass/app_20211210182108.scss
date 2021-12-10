@@ -1,0 +1,48 @@
+.liMainGnavi {
+    .postUnderNv {
+        display: none;
+    }
+    &:hover .postUnderNv {
+        display: block;
+    }
+}
+.postUnderNv {
+    width: 180px;
+    top: 105%;
+    background: #CCC;
+    color: #FFF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.buttonUnderNav {
+    padding: 10px;
+    display: block;
+    color: #000;
+    bottom: 1px solid #ccc;
+    font-size: 12px;
+    font-weight: 500;
+    transition-duration: 0.5s;
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.searchPostFx {
+
+}
+.buttonPost {
+    width: 49%;
+}
+.inputCheck {
+    width: 15px;
+    height: 15px;
+}
+.secPost {
+    width: 94%;
+    position: relative;;
+}
+@media screen and (max-width: 640px) {
+    .buttonPost {
+        width: 100%;
+    }
+}

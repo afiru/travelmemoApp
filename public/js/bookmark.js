@@ -10957,8 +10957,10 @@ $(function () {
       }
     }).done(function (data) {
       $(target).text(data);
-      console.log(target);
     }).fail(function (data) {});
+  });
+  $('.buttonSpMenu').on('click', function () {
+    $(this).next('.navSpMenu').slideToggle();
   });
 });
 })();
