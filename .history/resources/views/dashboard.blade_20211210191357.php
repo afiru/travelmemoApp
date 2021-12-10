@@ -29,6 +29,30 @@
                         </div>
                     </div>
 
+                    <div class="p-6 border-t border-gray-200 md:border-t-0 md:border-l">
+                        <section class="flex items-center">
+                            <h2 class="ml-2 text-lg text-gray-600 leading-7 font-semibold">
+                                行きたいところの新着情報が入ります
+                            </h2>
+                        </section>
+
+                        <div class="ml-12">
+
+                        </div>
+                    </div>
+
+                    <div class="p-6 border-t border-gray-200">
+                        <section class="flex items-center">
+                            <h2 class="ml-2 text-lg text-gray-600 leading-7 font-semibold">
+                                ここには残タスクが入ります。
+                            </h2>
+                        </section>
+
+                        <div class="ml-2">
+
+                        </div>
+                    </div>
+
                     <div class="p-6 border-t border-gray-200 md:border-l">
                         <section class="flex items-center">
                             <h2 class="ml-2 text-lg text-gray-600 leading-7 font-semibold">

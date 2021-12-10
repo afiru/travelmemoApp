@@ -35,7 +35,7 @@
                                 <a class="buttonUnderNav" href="/topics">トピックス一覧</a>
                             </li>
                             <li class="liUnderNv">
-                                <a class="buttonUnderNav" href="/addtopic">トピックス投稿</a>
+                                <a class="buttonUnderNav" href="{{ route('addtopic') }}">トピックス投稿</a>
                             </li>
                         </ul>
                     </li>
