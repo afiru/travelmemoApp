@@ -116,7 +116,7 @@ class PostsController extends Controller
             'post_id' => $post_id
         ];
         $count = user_point::where($where)->count();
-        if($count>=1){
+        if($count>0){
             $insert =[
                 'user_id' =>Auth::id(),
                 'post_id' => $post_id,
