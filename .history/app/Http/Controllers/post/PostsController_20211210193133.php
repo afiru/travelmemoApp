@@ -121,7 +121,7 @@ class PostsController extends Controller
         }else {
             $insert =[
                 'user_id' =>Auth::id(),
-                'post_id' => $post_id,
+                'post_id' => 2,
                 'point' => 1,
             ];
             $user_point = new user_point;
