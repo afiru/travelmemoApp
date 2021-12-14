@@ -1,69 +1,41 @@
-.liMainGnavi .postUnderNv {
-  display: none;
-}
-.liMainGnavi:hover .postUnderNv {
-  display: block;
-}
-
-.postUnderNv {
-  width: 180px;
-  top: 105%;
-  background: #CCC;
-  color: #FFF;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+.display_flex_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.buttonUnderNav {
-  padding: 10px;
-  display: block;
-  color: #000;
-  bottom: 1px solid #ccc;
-  font-size: 12px;
-  font-weight: 500;
-  transition-duration: 0.5s;
-}
-.buttonUnderNav:hover {
-  opacity: 0.6;
+.display_flex_stretch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.buttonPost {
-  width: 49%;
+.display_flex_stretch_bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-.inputCheck {
-  width: 15px;
-  height: 15px;
+.display_flex_center_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-end;
 }
 
-.secPost {
-  width: 94%;
-  position: relative;
+.display_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.bookingPostWap {
-  width: 50%;
-  position: absolute;
-  right: 0;
-  top: 2%;
+.display_row {
+  flex-flow: row wrap;
 }
 
-@media screen and (max-width: 640px) {
-  .bookingPostWap {
-    width: 33%;
-    position: absolute;
-    right: -3%;
-    top: -12%;
-  }
-}
-@media screen and (max-width: 640px) {
-  .buttonPost {
-    width: 100%;
-  }
-
-  .navSpMenu {
-    display: none;
-  }
+.appBack {
+  background: #F3F4F6;
 }
 /*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com *//*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
