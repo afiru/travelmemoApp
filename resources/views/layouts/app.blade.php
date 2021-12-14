@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
         @livewireStyles
-
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
         <script src="{{ mix('js/bookmark.js') }}"></script>
