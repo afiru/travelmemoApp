@@ -1,0 +1,121 @@
+.display_flex_center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.display_flex_stretch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.display_flex_stretch_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.display_flex_center_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-end;
+}
+.display_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.display_row {
+    flex-flow: row wrap;
+}
+
+//mixin
+$breakpoint: (
+  sp: 'screen and (max-width: 749px)',
+  tab: 'screen and (min-width: 750px)',
+  pc: 'screen and (min-width: 1025px)'
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+   @content;
+  }
+}
+@mixin ontener_width( $parentPxWidth, $pxWidth ){
+    width: floor((( $pxWidth / $parentPxWidth ) * 10000% )) / 100;
+}
+@mixin marginPercent($parentPxWidth, $mTop, $mRight, $mBottom, $mLeft){
+    @if $mLeft == auto and $mRight == auto {
+        margin-top:$mTop + 0px;
+        margin-bottom: $mBottom + 0px;
+        margin-left: auto;
+        margin-right: auto;
+        @include media($tab) {
+            margin-top:floor((($mTop / $parentPxWidth) * 10000%)) / 100;
+            margin-bottom: floor((($mBottom / $parentPxWidth) * 10000%)) / 100;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }@elseif $mLeft == auto{
+        margin-top:$mTop + 0px;
+        margin-bottom: $mBottom + 0px;
+        margin-left: auto;
+        margin-right: $mRight + 0px;
+        @include media($tab) {
+            margin-top:floor((($mTop / $parentPxWidth) * 10000%)) / 100;
+            margin-bottom: floor((($mBottom / $parentPxWidth) * 10000%)) / 100;
+            margin-left: auto;
+            margin-right: floor((($mRight / $parentPxWidth) * 10000%)) / 100;
+        }
+    }@elseif $mRight == auto{
+        margin-top:$mTop + 0px;
+        margin-bottom: $mBottom + 0px;
+        margin-left: $mLeft + 0px;
+        margin-right: auto;
+        @include media($tab) {
+            @include media($tab) {
+                margin-top:floor((($mTop / $parentPxWidth) * 10000%)) / 100;
+                margin-bottom: floor((($mBottom / $parentPxWidth) * 10000%)) / 100;
+                margin-left: floor((($mLeft / $parentPxWidth) * 10000%)) / 100;
+                margin-right: auto;
+            }
+        }
+    }@else {
+        margin-top:$mTop + 0px;
+        margin-bottom: $mBottom + 0px;
+        margin-left: $mLeft + 0px;
+        margin-right: $mRight + 0px;
+        @include media($tab) {
+            margin : floor((($mTop / $parentPxWidth) * 10000%)) / 100 floor((($mRight / $parentPxWidth) * 10000%)) / 100 floor((($mBottom / $parentPxWidth) * 10000%)) / 100 floor((($mLeft / $parentPxWidth) * 10000%)) / 100;
+        }
+    }
+}
+
+@mixin paddingPercent($parentPxWidth, $mTop, $mRight, $mBottom, $mLeft){
+    @if $mLeft == auto or $mRight == auto {
+        padding-top:$mTop + 0px;
+        padding-bottom: $mBottom + 0px;
+        padding-left: 0 + 0px;
+        padding-right: 0 + 0px;
+        @include media($tab) {
+            padding-top:floor((($mTop / $parentPxWidth) * 10000%)) / 100;
+            padding-bottom: floor((($mBottom / $parentPxWidth) * 10000%)) / 100;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    }@else {
+        padding-top:$mTop + 0px;
+        padding-bottom: $mBottom + 0px;
+        padding-left: $mLeft + 0px;
+        padding-right: $mRight + 0px;
+        @include media($tab) {
+            padding : floor((($mTop / $parentPxWidth) * 10000%)) / 100 floor((($mRight / $parentPxWidth) * 10000%)) / 100 floor((($mBottom / $parentPxWidth) * 10000%)) / 100 floor((($mLeft / $parentPxWidth) * 10000%)) / 100;
+        }
+    }
+}
+
+@mixin lineheight($fontsize,$lineheight){
+    line-height: $lineheight/$fontsize;
+}
+
