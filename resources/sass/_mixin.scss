@@ -32,7 +32,7 @@
 //mixin
 $breakpoint: (
   sp: 'screen and (max-width: 749px)',
-  tab: 'screen and (min-width: 750px)',
+  tab: 'screen and (max-width: 1024px)',
   pc: 'screen and (min-width: 1025px)'
 );
 
@@ -119,3 +119,52 @@ $breakpoint: (
     line-height: $lineheight/$fontsize;
 }
 
+@mixin rs_font_size($pc_size:16px,$tab_size:1.5625vw,$sp_size:4.266666666666667vw) {
+    @if $pc_size==1rem {
+        @include media(pc){
+            font-size: $pc_size;
+        }
+    }
+    @else {
+        @include media(pc){
+            font-size: $pc_size;
+        }
+    }
+    @if $tab_size==1.5625vw {
+        @include media(tab){
+            font-size: $tab_size;
+        }
+    }
+    @else {
+        @include media(tab){
+            font-size: $tab_size;
+        }
+    }
+    @if $sp_size==4.266666666666667vw {
+        @include media(sp){
+            font-size: $sp_size;
+        }
+    }
+    @else {
+        @include media(sp){
+            font-size: $sp_size;
+        }
+    }
+}
+@mixin kadomaru($radius) {
+    border-radius: $radius;        /* CSS3草案 */
+    -webkit-border-radius: $radius;    /* Safari,Google Chrome用 */
+    -moz-border-radius: $radius;   /* Firefox用 */
+}
+
+.wapper {
+    width: 1000px;
+    margin: auto;
+    @include media(tab) {
+        @include ontener_width(1024, 1000);
+    }
+    @include media(sp) {
+        width: 100%;
+    }
+
+}

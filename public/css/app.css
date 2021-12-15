@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .display_flex_center {
   display: flex;
   justify-content: space-between;
@@ -34,8 +35,211 @@
   flex-flow: row wrap;
 }
 
+.wapper {
+  width: 1000px;
+  margin: auto;
+}
+@media screen and (max-width: 1024px) {
+  .wapper {
+    width: 97.65%;
+  }
+}
+@media screen and (max-width: 749px) {
+  .wapper {
+    width: 100%;
+  }
+}
+
 .appBack {
   background: #F3F4F6;
+}
+
+.loginFormWap {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .loginFormWap {
+    padding: 5.33% 0% 5.33% 0%;
+  }
+}
+
+.h1LoinLogo {
+  text-align: center;
+}
+.h1LoinLogo img {
+  width: 42.66%;
+  max-width: 160px;
+  display: block;
+  margin: auto;
+}
+
+.loginFormCnt {
+  width: 93.75%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .loginFormCnt {
+    margin-top: 6.25%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .loginFormCnt {
+    padding: 3.12% 3.12% 3.12% 3.12%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .loginFormInput label {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .loginFormInput label {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .loginFormInput label {
+    font-size: 3.2vw;
+  }
+}
+
+.loginFormInput02 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1024px) {
+  .loginFormInput02 {
+    margin-top: 6.25%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.loginFormChackButton {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1024px) {
+  .loginFormChackButton {
+    margin-top: 3.12%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.buttonLogin {
+  width: 80px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  /* CSS3草案 */
+  -webkit-border-radius: 5px;
+  /* Safari,Google Chrome用 */
+  -moz-border-radius: 5px;
+  /* Firefox用 */
+  background: #050505;
+  color: #FFF;
+}
+@media screen and (min-width: 1025px) {
+  .buttonLogin {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .buttonLogin {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .buttonLogin {
+    font-size: 3.2vw;
+  }
+}
+
+.loginFormRe {
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1024px) {
+  .loginFormRe {
+    margin-top: 3.12%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .loginFormRe {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .loginFormRe {
+    font-size: 1vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .loginFormRe {
+    font-size: 2.6666666667vw;
+  }
+}
+
+.buttonLinkFormRe {
+  text-decoration: underline;
+  color: #050505;
+}
+@media screen and (min-width: 1025px) {
+  .buttonLinkFormRe {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .buttonLinkFormRe {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .buttonLinkFormRe {
+    font-size: 3.2vw;
+  }
+}
+
+.buttonLinkFormRe02 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .buttonLinkFormRe02 {
+    margin: 0% 0% 0% 6.25%;
+  }
 }
 /*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com *//*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
