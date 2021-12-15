@@ -14,7 +14,10 @@
     @include ontener_width(320 , 300);
     @include marginPercent(320 , 20 , auto , 0 , auto );
     background: #FFF;
-    @include paddingPercent(320 , 10 , 10 , 10 , 10 );
+    @include paddingPercent(320 , 20 , 20 , 20 , 20 );
+    @include media(sp) {
+        @include paddingPercent(320 , 10 , 10 , 10 , 10 );
+    }
 }
 .loginFormInput {
     label {
