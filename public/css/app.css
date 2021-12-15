@@ -55,14 +55,14 @@
 }
 
 .loginFormWap {
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
   padding-left: 0px;
   padding-right: 0px;
 }
 @media screen and (max-width: 1024px) {
   .loginFormWap {
-    padding: 5.33% 0% 5.33% 0%;
+    padding: 10.66% 0% 5.33% 0%;
   }
 }
 
