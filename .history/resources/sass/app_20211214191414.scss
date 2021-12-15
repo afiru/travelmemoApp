@@ -1,0 +1,7 @@
+@import 'mixin';
+
+.body {
+    @include mq(tab) {
+        color: #000;
+    }
+}
