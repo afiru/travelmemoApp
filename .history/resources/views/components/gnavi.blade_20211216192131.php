@@ -1,7 +1,7 @@
 <header class="wapper display_flex_stretch header">
     <h1 class="h1Header">
-        <a class="buttonHeader" href="/mypage">
-            <img loading="lazy" src="img/LogoHead.svg" alt="" width="150" height="30" />
+        <a class="buttonHeader" href="/dashboard">
+            <img loading="lazy" src="img/LogoHead.svg" alt="" width="99" height="30" />
         </a>
     </h1>
     <div class="display_flex_stretch logoutMenuHeader">

@@ -25,13 +25,23 @@
         <div class="min-h-screen bg-gray-100">
 
 
+            <!-- Page Heading -->
+            @if (isset($header))
+                <header class="bg-white shadow">
+                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                        {{ $header }}
+                    </div>
+                </header>
+            @endif
+
             <!-- Page Content -->
             <main>
                 {{ $slot }}
             </main>
-            <footer class="t_center footer">Copyrights (c) 旅案発信所 All Rights Reserved.</footer>
         </div>
 
+        @stack('modals')
 
+        @livewireScripts
     </body>
 </html>

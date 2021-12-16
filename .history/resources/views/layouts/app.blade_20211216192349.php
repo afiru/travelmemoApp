@@ -29,9 +29,10 @@
             <main>
                 {{ $slot }}
             </main>
-            <footer class="t_center footer">Copyrights (c) 旅案発信所 All Rights Reserved.</footer>
         </div>
 
+        @stack('modals')
 
+        @livewireScripts
     </body>
 </html>

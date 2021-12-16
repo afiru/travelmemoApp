@@ -46,8 +46,7 @@
 @import 'page/_navigationHeader';
 
 .footer {
-    text-align: center;
     width: 100%;
-    @include marginPercent(320 , 0 , auto , 0 , auto );
+    @include marginPercent(320 , 10 , auto , 0 , auto );
     @include paddingPercent(320 , 80 , 0 , 0 , 0 );
 }

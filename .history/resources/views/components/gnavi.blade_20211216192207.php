@@ -1,6 +1,6 @@
 <header class="wapper display_flex_stretch header">
     <h1 class="h1Header">
-        <a class="buttonHeader" href="/mypage">
+        <a class="buttonHeader" href="/">
             <img loading="lazy" src="img/LogoHead.svg" alt="" width="150" height="30" />
         </a>
     </h1>
