@@ -54,6 +54,30 @@
   background: #F3F4F6;
 }
 
+[type=text]:focus, [type=email]:focus, [type=url]:focus, [type=password]:focus, [type=number]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=week]:focus, [multiple]:focus, textarea:focus, select:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  border-color: #FFA300 !important;
+  --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+[type=checkbox]:checked, [type=radio]:checked {
+  background-color: #FFA300 !important;
+}
+
+.focus\:ring:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(#ffa3000d) !important;
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) #ffa3000d !important;
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #ffa3000d) !important;
+}
+
 .loginFormWap {
   padding-top: 40px;
   padding-bottom: 20px;
@@ -83,8 +107,8 @@
   margin-left: auto;
   margin-right: auto;
   background: #FFF;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -98,20 +122,20 @@
 }
 @media screen and (max-width: 1024px) {
   .loginFormCnt {
-    padding: 6.25% 6.25% 6.25% 6.25%;
+    padding: 9.37% 6.25% 9.37% 6.25%;
   }
 }
 @media screen and (max-width: 749px) {
   .loginFormCnt {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 @media screen and (max-width: 749px) and (max-width: 1024px) {
   .loginFormCnt {
-    padding: 3.12% 3.12% 3.12% 3.12%;
+    padding: 9.37% 3.12% 9.37% 3.12%;
   }
 }
 
@@ -147,14 +171,14 @@
 }
 
 .loginFormChackButton {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (max-width: 1024px) {
   .loginFormChackButton {
-    margin-top: 3.12%;
+    margin-top: 4.68%;
     margin-bottom: 0%;
     margin-left: auto;
     margin-right: auto;
@@ -253,6 +277,140 @@
   .buttonLinkFormRe02 {
     margin: 0% 0% 0% 6.25%;
   }
+}
+
+.txtForgotPass {
+  line-height: 1.6666666667;
+}
+@media screen and (min-width: 1025px) {
+  .txtForgotPass {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .txtForgotPass {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .txtForgotPass {
+    font-size: 3.2vw;
+  }
+}
+
+.formForgotPass {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .formForgotPass {
+    padding: 10.66% 0% 5.33% 0%;
+  }
+}
+
+.formRgister02 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1024px) {
+  .formRgister02 {
+    margin-top: 3.12%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 3.12% 3.12% 3.12% 3.12%;
+  }
+}
+
+.logoutMenuHeader {
+  width: 58px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .logoutMenuHeader {
+    margin: 1.56% 0% 0% 0%;
+  }
+}
+.logoutMenuHeader .logout {
+  width: 24px;
+}
+.logoutMenuHeader .menu {
+  position: relative;
+  width: 24px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 9999999999;
+}
+
+.logout form {
+  display: block;
+}
+
+.logoutMenuHeader .menu .borderMenu {
+  display: block;
+  height: 3px;
+  width: 24px;
+  background: #999999;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition-duration: 0.5s;
+}
+
+.logoutMenuHeader .menu.off .borderMenu01 {
+  top: 0;
+}
+.logoutMenuHeader .menu.off .borderMenu02 {
+  top: 9px;
+}
+.logoutMenuHeader .menu.off .borderMenu03 {
+  top: 19px;
+}
+
+.logoutMenuHeader .menu.on .borderMenu01 {
+  top: 9px;
+  transform: rotate(45deg);
+}
+.logoutMenuHeader .menu.on .borderMenu02 {
+  top: 9px;
+  opacity: 0;
+}
+.logoutMenuHeader .menu.on .borderMenu03 {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+.gNvi {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.gNaviCnt {
+  width: 280px;
+  margin: 10vh auto;
 }
 /*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com *//*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 

@@ -1,0 +1,65 @@
+.loginFormWap {
+    @include paddingPercent(375 , 20 , 0 , 20 , 0 );
+}
+.h1LoinLogo {
+    text-align: center;
+    img {
+        @include ontener_width(375 , 160);
+        max-width: 160px;
+        display: block;
+        margin: auto;
+    }
+}
+.loginFormCnt {
+    @include ontener_width(320 , 300);
+    @include marginPercent(320 , 20 , auto , 0 , auto );
+    background: #FFF;
+    @include paddingPercent(320 , 20 , 20 , 20 , 20 );
+    @include media(sp) {
+        @include paddingPercent(320 , 10 , 10 , 10 , 10 );
+    }
+}
+.loginFormInput {
+    label {
+        @include rs_font_size(12px,1.2vw,3.2vw);
+        //フォント（px）【PC】:12px |【Tab】12px |【sp】 12px
+        //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 375px
+    }
+}
+.loginFormInput02 {
+    @include marginPercent(320 , 20 , auto , 0 , auto );
+}
+.loginFormChackButton {
+    @include marginPercent(320 , 10 , auto , 0 , auto );
+}
+.buttonLogin {
+    width: 80px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include kadomaru(5px);
+    background: #050505;
+    color: #FFF;
+    @include rs_font_size(12px,1.2vw,3.2vw);
+    //フォント（px）【PC】:12px |【Tab】12px |【sp】 12px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 375px
+}
+
+.loginFormRe {
+    justify-content: flex-start;
+    @include marginPercent(320 , 10 , auto , 0 , auto );
+    @include rs_font_size(10px,1vw,2.6666666666666665vw);
+    //フォント（px）【PC】:10px |【Tab】10px |【sp】 10px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 375px
+}
+.buttonLinkFormRe {
+    text-decoration: underline;
+    color: #050505;
+    @include rs_font_size(12px,1.2vw,3.2vw);
+    //フォント（px）【PC】:12px |【Tab】12px |【sp】 12px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 375px
+}
+.buttonLinkFormRe02 {
+    @include marginPercent(320 , 0 , 0 , 0 , 20 );
+}
