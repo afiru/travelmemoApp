@@ -28,9 +28,23 @@ class gnavi extends Component
 
     public function __construct($nowTopics=0,$nowbooking=0)
     {
+        $nowTopics = post::where('postModified' ,'>=', date("Y-m-d H:i:s",strtotime("-7 day")))->count();
+        if(isset($nowTopics))
+        {
+            $this->nowTopics = $nowTopics;
+        }
+        else {
+            $this->nowTopics = 0;
+        }
 
-        $this->nowTopics = post::where('postModified' ,'>=', date("Y-m-d H:i:s",strtotime("-7 day")))->count();
-        $this->nowbooking = user_point::where('user_id',Auth::id())->count();
+        $nowbooking = user_point::where('user_id',Auth::id())->count();
+        if(isset($nowbooking))
+        {
+            $this->nowbooking = $nowbooking;
+        }
+        else {
+            $this->nowbooking = 0;
+        }
     }
 
     /**
