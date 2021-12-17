@@ -17,4 +17,8 @@
         </div>
     </div>
 
+
+        <x-post.add-posts-search :where=$where></x-post.add-posts-search>
+    </div>
+
 </x-app-layout>
