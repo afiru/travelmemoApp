@@ -1,4 +1,6 @@
 <article class="topicsArchives">
+    @if(empty($topics ))
+    @else
     @foreach($topics as $topic)
     <section class="secTopicsArchives">
         <a class="buttonTopicsArchives" href="/topic/{{ $topic->id }}">
@@ -7,6 +9,8 @@
         </a>
     </section>
     @endforeach
+    @endif
+
 
     @if($haslink==="true")
         <div class="buttonMoreTopicsWap">
