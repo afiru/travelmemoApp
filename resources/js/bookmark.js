@@ -10,6 +10,18 @@ function set_csrftoken() {
     });
 }
 $(function () {
+    $('.jsMenuOpen').on('click',function(){
+        if($(this).hasClass('off')){
+            $('.gNvi').fadeIn(500);
+            $(this).removeClass('off').addClass('on');
+        }else {
+            $('.gNvi').fadeOut(500);
+            $(this).removeClass('on').addClass('off');
+        }
+    });
+});
+
+$(function () {
     $('.jsButtonPost').on('click', function () {
         id = $(this).data('id');
         console.log(id);

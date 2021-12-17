@@ -12,7 +12,7 @@
                 <button type="submit"><img loading="lazy" src="img/buttonLogout.svg" alt="" width="24" height="24" /></button>
             </form>
         </div>
-        <div class="menu jsMenuOpen on">
+        <div class="menu jsMenuOpen off">
             <span class="borderMenu borderMenu01"></span>
             <span class="borderMenu borderMenu02"></span>
             <span class="borderMenu borderMenu03"></span>
@@ -44,7 +44,7 @@
                     </li>
                     <li class="liSubGnavi">
                         <a class="buttonSubGnavi" href="/addpost">
-                            <span class="iconSubGnavi iconSubGnavi01">行きたいところ投稿</span>
+                            <span class="iconSubGnavi iconSubGnavi02">行きたいところ投稿</span>
                         </a>
                     </li>
                 </ul>
@@ -69,12 +69,12 @@
                 <ul class="subGnavi">
                     <li class="liSubGnavi">
                         <a class="buttonSubGnavi" href="/invoices">
-                            <span class="iconSubGnavi iconSubGnavi03">請求書</span>
+                            <span class="iconSubGnavi iconSubGnavi05">請求書</span>
                         </a>
                     </li>
                     <li class="liSubGnavi">
                         <a class="buttonSubGnavi" href="/addinvoice">
-                            <span class="iconSubGnavi iconSubGnavi04">請求書項目追加</span>
+                            <span class="iconSubGnavi iconSubGnavi06">請求書項目追加</span>
                         </a>
                     </li>
                 </ul>
