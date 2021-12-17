@@ -5,7 +5,6 @@
             <section class="secMypage">
                 <h2 class="t_center h2Mypage">行きたいとところ一覧</h2>
             </section>
-
         </div>
     </div>
 
