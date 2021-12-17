@@ -410,11 +410,11 @@
 
 .gNaviCnt {
   width: 280px;
-  margin: 10vh auto;
+  margin: 5vh auto;
 }
 
 .secGnavi {
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -429,7 +429,7 @@
 }
 @media screen and (max-width: 1024px) {
   .secGnavi {
-    margin-top: 6.25%;
+    margin-top: 4.68%;
     margin-bottom: 0%;
     margin-left: auto;
     margin-right: auto;
@@ -522,8 +522,8 @@
 
 .trigerGnavi {
   display: block;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 0px;
   padding-right: 0px;
   border-bottom: 1px solid #c4c4c4;
@@ -534,7 +534,7 @@
 }
 @media screen and (max-width: 1024px) {
   .trigerGnavi {
-    padding: 4.37% 0% 4.37% 0%;
+    padding: 3.12% 0% 3.12% 0%;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -555,8 +555,8 @@
 
 .buttonSubGnavi {
   display: block;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 0px;
   padding-right: 0px;
   border-bottom: 1px solid #c4c4c4;
@@ -568,7 +568,7 @@
 }
 @media screen and (max-width: 1024px) {
   .buttonSubGnavi {
-    padding: 4.37% 0% 4.37% 0%;
+    padding: 3.12% 0% 3.12% 0%;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -602,14 +602,14 @@
 }
 
 .liGnavi02 {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (max-width: 1024px) {
   .liGnavi02 {
-    margin-top: 6.25%;
+    margin-top: 3.12%;
     margin-bottom: 0%;
     margin-left: auto;
     margin-right: auto;

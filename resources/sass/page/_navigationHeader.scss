@@ -70,10 +70,10 @@
 }
 .gNaviCnt {
     width: 280px;
-    margin: 10vh auto;
+    margin: 5vh auto;
 }
 .secGnavi {
-    @include marginPercent(320 , 20 , auto , 0 , auto );
+    @include marginPercent(320 , 15 , auto , 0 , auto );
     @include paddingPercent(320 , 0 , 0 , 5 , 0);
     display: flex;
     justify-content: space-between;
@@ -126,7 +126,7 @@
 }
 .trigerGnavi{
     display: block;
-    @include paddingPercent(320 , 14 , 0 , 14 , 0);
+    @include paddingPercent(320 , 10 , 0 , 10 , 0);
     border-bottom: 1px solid #c4c4c4;
     line-height: 1.7;
     letter-spacing:0.1em;
@@ -144,7 +144,7 @@
 }
 .buttonSubGnavi{
     display: block;
-    @include paddingPercent(320 , 14 , 0 , 14 , 0);
+    @include paddingPercent(320 , 10 , 0 , 10 , 0);
     border-bottom: 1px solid #c4c4c4;
     line-height: 1.7;
     letter-spacing:0.1em;
@@ -168,7 +168,7 @@
     background-size: auto 90%;
 }
 .liGnavi02{
-    @include marginPercent(320 , 20 , auto , 0 , auto );
+    @include marginPercent(320 , 10 , auto , 0 , auto );
 }
 .iconSubGnavi03{
     background: url(/img/IconMegaphone.svg) no-repeat center left;
