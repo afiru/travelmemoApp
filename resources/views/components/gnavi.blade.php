@@ -24,12 +24,12 @@
         <section class="display_flex_stretch secGnavi">
             <p class="display_flex_stretch_bottom txtSecGnavi">
                 <span class="titleSecGnavi">直近のトピックス</span>
-                <span class="intSecGnavi">@isset($nowTopics) {{ $nowTopics }} @endisset</span>
+                <span class="intSecGnavi"></span>
                 <span class="kenSecGnavi">件</span>
             </p>
             <p class="display_flex_stretch_bottom txtSecGnavi">
                 <span class="titleSecGnavi">いいね件数</span>
-                <span class="intSecGnavi">@isset($nowbooking)  {{ $nowbooking }} @endisset</span>
+                <span class="intSecGnavi"></span>
                 <span class="kenSecGnavi">件</span>
             </p>
         </section>
