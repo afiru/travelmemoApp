@@ -26,7 +26,7 @@ class gnavi extends Component
      */
     public $nowbooking;
 
-    public function __construct()
+    public function __construct($nowTopics=0,$nowbooking=0)
     {
 
         $this->nowTopics = post::where('postModified' ,'>=', date("Y-m-d H:i:s",strtotime("-7 day")))->count();
