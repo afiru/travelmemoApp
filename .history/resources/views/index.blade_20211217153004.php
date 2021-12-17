@@ -12,7 +12,7 @@
             </section>
             <section class="secMypageInvoices">
                 <h3 class="h3SecMypageTopics">現在の予算</h3>
-                <x-invoice.sum-invoice intPerson=4></x-invoice.sum-invoice>
+                <x-invoice.sum-invoice></x-invoice.sum-invoice>
             </section>
         </div>
     </div>
