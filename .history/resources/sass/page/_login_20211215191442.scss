@@ -1,0 +1,18 @@
+.loginFormWap {
+    @include paddingPercent(375 , 20 , 0 , 20 , 0 );
+}
+.h1LoinLogo {
+    text-align: center;
+    img {
+        @include ontener_width(375 , 160);
+        max-width: 160px;
+        display: block;
+        margin: auto;
+    }
+}
+.loginFormCnt {
+    @include ontener_width(320 , 300);
+    @include marginPercent(320 , 20 , auto , 0 , auto );
+    background: #FFF;
+    @include paddingPercent(320 , 10 , 10 , 10 , 10 );
+}

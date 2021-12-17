@@ -1,0 +1,58 @@
+.header {
+    @include paddingPercent(320 , 10 , 10 , 10 , 10 );
+}
+.logoutMenuHeader {
+    width: 58px;
+    @include marginPercent(320 , 5 , 0 , 0 , 0 );
+    .logout {
+        width: 24px;
+    }
+    .menu {
+        position: relative;
+        width: 24px;
+        height: 21px;
+        cursor: pointer;
+        z-index: 9999999999;
+    }
+}
+.logout form {
+    display: block;
+}
+.logoutMenuHeader .menu {
+    .borderMenu {
+        display: block;
+        height: 3px;
+        width: 24px;
+        background: #999999;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition-duration: 0.5s;
+    }
+}
+.logoutMenuHeader .menu.off {
+    .borderMenu01 {
+        top: 0;
+    }
+    .borderMenu02 {
+        top: 9px;
+    }
+    .borderMenu03 {
+        top: 19px;
+    }
+}
+
+.logoutMenuHeader .menu.on {
+    .borderMenu01 {
+        top: 9px;
+        transform: rotate(45deg);
+    }
+    .borderMenu02 {
+        top: 9px;
+        opacity: 0;
+    }
+    .borderMenu03 {
+        top: 9px;
+        transform: rotate(-45deg);
+    }
+}
