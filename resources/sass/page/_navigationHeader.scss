@@ -69,8 +69,10 @@
     display: none;
 }
 .gNaviCnt {
-    width: 280px;
+    width: 300px;
     margin: 5vh auto;
+    height: 90vh;
+    overflow: scroll;
 }
 .secGnavi {
     @include marginPercent(320 , 15 , auto , 0 , auto );
@@ -144,7 +146,7 @@
 }
 .buttonSubGnavi{
     display: block;
-    @include paddingPercent(320 , 10 , 0 , 10 , 0);
+    @include paddingPercent(320 , 7 , 0 , 7 , 0);
     border-bottom: 1px solid #c4c4c4;
     line-height: 1.7;
     letter-spacing:0.1em;
