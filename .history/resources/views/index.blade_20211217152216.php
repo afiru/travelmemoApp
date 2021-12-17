@@ -11,7 +11,7 @@
                 <x-topics.topics-archives limit="5" haslink=true haspaginate=false></x-topics.topics-archives>
             </section>
             <section class="secMypageInvoices">
-                <h3 class="h3SecMypageTopics">現在の予算</h3>
+                <h3 class="h3SecMypageTopics">新着情報</h3>
             </section>
         </div>
     </div>

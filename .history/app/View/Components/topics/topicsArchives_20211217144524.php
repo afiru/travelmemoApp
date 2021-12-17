@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\topics;
 
 use Illuminate\View\Component;
 use Illuminate\Support\Facades\Auth;
@@ -8,29 +8,29 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\post;
 use App\Models\user_point;
 use App\Models\invoice;
+use App\Models\topic;
 
-
-class gnavi extends Component
+class topicsArchives extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return int
      */
-    public $nowTopics;
+    public $limit;
 
     /**
      * Create a new component instance.
      *
-     * @return int
+     * @return object
      */
-    public $nowbooking;
+    public $topics;
 
-    public function __construct()
+
+    public function __construct($limit = 0, $topics=null)
     {
-
-        $this->nowTopics = post::where('postModified' ,'>=', date("Y-m-d H:i:s",strtotime("-7 day")))->count();
-        $this->nowbooking = user_point::where('user_id',Auth::id())->count();
+        $this->limit = $limit;
+        $this->topics = topic::orderBy('UPDATED_AT','desc')->simplePaginate(10);
     }
 
     /**
@@ -40,6 +40,6 @@ class gnavi extends Component
      */
     public function render()
     {
-        return view('components.gnavi');
+        return view('components.topics.topics-archives');
     }
 }

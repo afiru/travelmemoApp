@@ -413,6 +413,10 @@
   margin: 10vh auto;
 }
 
+.paginate p.leading-5 {
+  display: none;
+}
+
 .footer {
   text-align: center;
   width: 100%;
