@@ -5,11 +5,6 @@
             <section class="secMypage">
                 <h2 class="t_center h2Mypage">行きたいとところ一覧</h2>
             </section>
-            <x-post.post-archives :where=$where :datas=$data></x-post.post-archives>
         </div>
-        <figure class="searchPostsOpen jsSearchPostsOpen">
-            <img loading="lazy" src="/img/buttonSearchPostsOpen.svg" alt="検索" width="80" height="50" />
-        </figure>
     </div>
-    <x-post.add-posts-search :where=$where></x-post.add-posts-search>
 </x-app-layout>
