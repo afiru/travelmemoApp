@@ -6,7 +6,7 @@
                 <h2 class="t_center h2Mypage">請求書</h2>
             </section>
 
-            <form action="/invoices" method="post">
+            <form action="/invoices" method="">
                 @csrf
                 @if(empty($invoices))
                 @else

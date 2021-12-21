@@ -37,15 +37,6 @@ class invoicesController extends Controller
 
     public function addinvoices()
     {
-        return view('invoices.addinvoices');
-    }
-
-    public function add(Request $request)
-    {
-        $this->validate($request, topic::$rules);
-        $topic = new topic;
-        $form = $request->all();
-        unset($form['_token']);
-        $topic->fill($form)->save();
+        return view('invoices.index');
     }
 }

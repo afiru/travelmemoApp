@@ -19,7 +19,6 @@ class invoicesController extends Controller
         $personSum = invoice::sum("cost") / 4;
         return view('invoices.index',['invoices'=>$invoices,'sum'=>$sum , 'personSum'=>$personSum]);
     }
-
     public function del(Request $request)
     {
         if(isset($request->invoiceDel))
@@ -33,19 +32,5 @@ class invoicesController extends Controller
             }
         }
         return redirect('/invoices');
-    }
-
-    public function addinvoices()
-    {
-        return view('invoices.addinvoices');
-    }
-
-    public function add(Request $request)
-    {
-        $this->validate($request, topic::$rules);
-        $topic = new topic;
-        $form = $request->all();
-        unset($form['_token']);
-        $topic->fill($form)->save();
     }
 }
