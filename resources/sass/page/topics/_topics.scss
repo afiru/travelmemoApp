@@ -1,0 +1,23 @@
+.h2Mypage {
+    text-align: center;
+    font-weight: 600;
+    @include rs_font_size(14px,1.4vw,4.375vw);
+    //フォント（px）【PC】:14px |【Tab】14px |【sp】 14px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.topicsArchives {
+    border-top: solid 1px #C4C4C4;
+    @include marginPercent(320 , 14 , 0 , 0 , 0);
+    @include paddingPercent(320 , 11 , 0 , 0 , 0);
+}
+.timeTopics {
+    background: url(../img/timeTopics_icon.svg) no-repeat top center;
+    background-size: auto 100%;
+    @include rs_font_size(11px,1.1vw,3.4375vw);
+    //フォント（px）【PC】:11px |【Tab】11px |【sp】 11px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.buttonTopicsArchives {
+    display: block;
+    @include marginPercent(320 , 6 , 0 , 0 , 0);
+}
