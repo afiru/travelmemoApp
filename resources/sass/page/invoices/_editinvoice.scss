@@ -1,0 +1,42 @@
+.myPageMainInvoices {
+    box-shadow: 1px 8px 7px 1px rgba(0, 0, 0, .1);
+    @include paddingPercent(320 , 21 , 0 , 21 , 0);
+}
+.invoicesForm {
+    @include marginPercent(1000 , 30 , 0 , 0 , 0);
+    @include paddingPercent(1000 , 0 , 30 , 0 , 30);
+    @include media(sp) {
+        @include marginPercent(320 , 10 , 0 , 0 , 0);
+        @include paddingPercent(320 , 0 , 11 , 0 , 11);
+    }
+    .buttonSubmitWap {
+        width: 26%;
+    }
+    .buttonAddCheangePost {
+        height: 40px;
+        width: 70%;
+        margin-top: 0;
+        vertical-align: center;
+        background: #000;
+        @include kadomaru(8px);
+        @include media(sp) {
+            height: 10vw;
+            width: 100%;  
+        }
+    }
+    .priceSecInvoice {
+        width: 45%;
+        font-weight: 600;
+    }
+    .taniPriceSecInvoice {
+        width: 50%;
+        text-align: right;
+    }
+    .yenPriceSecInvoice {
+        width: 50%;
+        text-align: right;
+        @include rs_font_size(17px,1.7vw,5.3125vw);
+        //フォント（px）【PC】:17px |【Tab】17px |【sp】 17px
+        //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+    }
+}
