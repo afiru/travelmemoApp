@@ -1,0 +1,37 @@
+form {
+    border-top: solid 1px #C4C4C4;
+    @include marginPercent(320 , 14 , 0 , 0 , 0);
+    @include paddingPercent(320 , 16 , 10 , 0 , 10);
+}
+.formAddCheangePost {
+    input {
+        width: 100%;
+        @include marginPercent(320 , 5 , 0 , 0 , 0);
+    }
+    textarea {
+        width: 100%;
+        @include marginPercent(320 , 5 , 0 , 0 , 0);
+    }
+}
+.buttonTopicsArchives {
+    display: block;
+    @include marginPercent(320 , 6 , 0 , 0 , 0);
+}
+.formAddCheangePost {
+    &:nth-of-type(n+2) {
+        @include marginPercent(320 , 20 , 0 , 0 , 0);
+    }
+}
+.buttonAddCheangePost {
+    width: 100%;
+    height: 11.2vw;
+    background: #FFA300;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    @include kadomaru(5px);
+    @include marginPercent(320 , 40 , 0 , 0 , 0);
+    @include rs_font_size(12px,1.2vw,3.75vw);
+    //フォント（px）【PC】:12px |【Tab】12px |【sp】 12px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}

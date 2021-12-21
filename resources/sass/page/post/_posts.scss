@@ -1,0 +1,31 @@
+.myPageMainWap{
+    padding: 0;
+}
+.myPageMain{
+    @include paddingPercent(300 , 20 , 0 , 0 , 0);
+    box-shadow: 5px 5px 5px #c4c4c4;
+}
+.secMypage{
+
+}
+.h2Mypage{
+    @include rs_font_size(14px,1.4vw,4.375vw);
+    //フォント（px）【PC】:14px |【Tab】14px |【sp】 14px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+    text-align: center;
+    font-weight: 600;
+}
+.postsArchives{
+    @include marginPercent(300 , 13 , auto , 0 , auto);
+}
+.postsArchivesFx{
+
+}
+.timeBookingArchivesFx{
+    @include paddingPercent(300 , 13 , 9 , 0 , 9);
+    width: 100%;
+    border-top: 1px solid #C4C4C4;
+}
+.dateGenrePosts{
+    @include paddingPercent(300 , 0 , 9 , 13 , 9);
+}
