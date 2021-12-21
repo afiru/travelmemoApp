@@ -325,6 +325,84 @@
   }
 }
 
+.myPageMainWap {
+  padding: 0;
+}
+
+.myPageMain {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  box-shadow: 5px 5px 5px #c4c4c4;
+}
+@media screen and (max-width: 1024px) {
+  .myPageMain {
+    padding: 6.66% 0% 0% 0%;
+  }
+}
+
+.h2Mypage {
+  text-align: center;
+  font-weight: 600;
+}
+@media screen and (min-width: 1025px) {
+  .h2Mypage {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .h2Mypage {
+    font-size: 1.4vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .h2Mypage {
+    font-size: 4.375vw;
+  }
+}
+
+.postsArchives {
+  margin-top: 13px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1024px) {
+  .postsArchives {
+    margin-top: 4.33%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.timeBookingArchivesFx {
+  padding-top: 13px;
+  padding-bottom: 0px;
+  padding-left: 9px;
+  padding-right: 9px;
+  width: 100%;
+  border-top: 1px solid #C4C4C4;
+}
+@media screen and (max-width: 1024px) {
+  .timeBookingArchivesFx {
+    padding: 4.33% 3% 0% 3%;
+  }
+}
+
+.dateGenrePosts {
+  padding-top: 0px;
+  padding-bottom: 13px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+@media screen and (max-width: 1024px) {
+  .dateGenrePosts {
+    padding: 0% 3% 4.33% 3%;
+  }
+}
+
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
