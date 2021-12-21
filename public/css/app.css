@@ -1,3 +1,784 @@
+@charset "UTF-8";
+.display_flex_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.display_flex_stretch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.display_flex_stretch_bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.display_flex_center_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-end;
+}
+
+.display_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.display_row {
+  flex-flow: row wrap;
+}
+
+.wapper {
+  width: 1000px;
+  margin: auto;
+}
+@media screen and (max-width: 1024px) {
+  .wapper {
+    width: 97.65%;
+  }
+}
+@media screen and (max-width: 749px) {
+  .wapper {
+    width: 100%;
+  }
+}
+
+.appBack {
+  background: #F3F4F6;
+}
+
+[type=text]:focus, [type=email]:focus, [type=url]:focus, [type=password]:focus, [type=number]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=week]:focus, [multiple]:focus, textarea:focus, select:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  border-color: #FFA300 !important;
+  --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+[type=checkbox]:checked, [type=radio]:checked {
+  background-color: #FFA300 !important;
+}
+
+.focus\:ring:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(#ffa3000d) !important;
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) #ffa3000d !important;
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #ffa3000d) !important;
+}
+
+.loginFormWap {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .loginFormWap {
+    padding: 10.66% 0% 5.33% 0%;
+  }
+}
+
+.h1LoinLogo {
+  text-align: center;
+}
+.h1LoinLogo img {
+  width: 42.66%;
+  max-width: 160px;
+  display: block;
+  margin: auto;
+}
+
+.loginFormCnt {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFF;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .loginFormCnt {
+    margin-top: 6.25%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .loginFormCnt {
+    padding: 9.37% 6.25% 9.37% 6.25%;
+  }
+}
+@media screen and (max-width: 749px) {
+  .loginFormCnt {
+    width: 93.75%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 749px) and (max-width: 1024px) {
+  .loginFormCnt {
+    padding: 9.37% 3.12% 9.37% 3.12%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .loginFormInput label {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .loginFormInput label {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .loginFormInput label {
+    font-size: 3.2vw;
+  }
+}
+
+.loginFormInput02 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1024px) {
+  .loginFormInput02 {
+    margin-top: 6.25%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.loginFormChackButton {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1024px) {
+  .loginFormChackButton {
+    margin-top: 4.68%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.buttonLogin {
+  width: 80px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  /* CSS3草案 */
+  -webkit-border-radius: 5px;
+  /* Safari,Google Chrome用 */
+  -moz-border-radius: 5px;
+  /* Firefox用 */
+  background: #050505;
+  color: #FFF;
+}
+@media screen and (min-width: 1025px) {
+  .buttonLogin {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .buttonLogin {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .buttonLogin {
+    font-size: 3.2vw;
+  }
+}
+
+.loginFormRe {
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1024px) {
+  .loginFormRe {
+    margin-top: 3.12%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .loginFormRe {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .loginFormRe {
+    font-size: 1vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .loginFormRe {
+    font-size: 2.6666666667vw;
+  }
+}
+
+.buttonLinkFormRe {
+  text-decoration: underline;
+  color: #050505;
+}
+@media screen and (min-width: 1025px) {
+  .buttonLinkFormRe {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .buttonLinkFormRe {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .buttonLinkFormRe {
+    font-size: 3.2vw;
+  }
+}
+
+.buttonLinkFormRe02 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .buttonLinkFormRe02 {
+    margin: 0% 0% 0% 6.25%;
+  }
+}
+
+.txtForgotPass {
+  line-height: 1.6666666667;
+}
+@media screen and (min-width: 1025px) {
+  .txtForgotPass {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .txtForgotPass {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .txtForgotPass {
+    font-size: 3.2vw;
+  }
+}
+
+.formForgotPass {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .formForgotPass {
+    padding: 10.66% 0% 5.33% 0%;
+  }
+}
+
+.formRgister02 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1024px) {
+  .formRgister02 {
+    margin-top: 3.12%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.myPageMain {
+  padding-top: 21px;
+  padding-bottom: 70px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .myPageMain {
+    padding: 6.56% 0% 21.87% 0%;
+  }
+}
+
+.h2Mypage {
+  text-align: center;
+  font-weight: 600;
+}
+@media screen and (min-width: 1025px) {
+  .h2Mypage {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .h2Mypage {
+    font-size: 1.4vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .h2Mypage {
+    font-size: 4.375vw;
+  }
+}
+
+.topicsArchives {
+  border-top: solid 1px #C4C4C4;
+  margin-top: 14px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 11px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .topicsArchives {
+    margin: 4.37% 0% 0% 0%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .topicsArchives {
+    padding: 3.43% 3.12% 0% 3.12%;
+  }
+}
+
+.timeTopics {
+  background: url(/img/timeTopics_icon.svg) no-repeat 0% center;
+  background-size: auto 80%;
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  color: #999999;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 0px;
+}
+@media screen and (min-width: 1025px) {
+  .timeTopics {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .timeTopics {
+    font-size: 1.1vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .timeTopics {
+    font-size: 3.4375vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .timeTopics {
+    padding: 0% 0% 0% 6.25%;
+  }
+}
+
+.buttonTopicsArchives {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .buttonTopicsArchives {
+    margin: 1.87% 0% 0% 0%;
+  }
+}
+
+.secTopicsArchives:nth-child(n+2) {
+  margin-top: 17px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .secTopicsArchives:nth-child(n+2) {
+    margin: 5.31% 0% 0% 0%;
+  }
+}
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 3.12% 3.12% 3.12% 3.12%;
+  }
+}
+
+.logoutMenuHeader {
+  width: 58px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .logoutMenuHeader {
+    margin: 1.56% 0% 0% 0%;
+  }
+}
+.logoutMenuHeader .logout {
+  width: 24px;
+}
+.logoutMenuHeader .menu {
+  position: relative;
+  width: 24px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 9999999999;
+}
+
+.logout form {
+  display: block;
+}
+
+.logoutMenuHeader .menu .borderMenu {
+  display: block;
+  height: 3px;
+  width: 24px;
+  background: #999999;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition-duration: 0.5s;
+}
+
+.logoutMenuHeader .menu.off .borderMenu01 {
+  top: 0;
+}
+.logoutMenuHeader .menu.off .borderMenu02 {
+  top: 9px;
+}
+.logoutMenuHeader .menu.off .borderMenu03 {
+  top: 19px;
+}
+
+.logoutMenuHeader .menu.on .borderMenu01 {
+  top: 9px;
+  transform: rotate(45deg);
+}
+.logoutMenuHeader .menu.on .borderMenu02 {
+  top: 9px;
+  opacity: 0;
+}
+.logoutMenuHeader .menu.on .borderMenu03 {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+.gNvi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: none;
+}
+
+.gNaviCnt {
+  width: 80vw;
+  margin: 5vh auto;
+  height: 90vh;
+  overflow: scroll;
+}
+
+.secGnavi {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid #c4c4c4;
+}
+@media screen and (max-width: 1024px) {
+  .secGnavi {
+    margin-top: 4.68%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .secGnavi {
+    padding: 0% 0% 1.56% 0%;
+  }
+}
+
+.txtSecGnavi {
+  min-width: 50%;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.txtSecGnavi + .txtSecGnavi {
+  justify-content: flex-end;
+}
+
+.titleSecGnavi {
+  line-height: 1.7;
+  letter-spacing: 0.1em;
+  font-feature-settings: "palt";
+  font-weight: 500;
+}
+@media screen and (min-width: 1025px) {
+  .titleSecGnavi {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .titleSecGnavi {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .titleSecGnavi {
+    font-size: 3.75vw;
+  }
+}
+
+.intSecGnavi {
+  margin: 0 2%;
+  line-height: 1.7;
+  letter-spacing: 0.06em;
+  font-feature-settings: "palt";
+  font-weight: 500;
+}
+@media screen and (min-width: 1025px) {
+  .intSecGnavi {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .intSecGnavi {
+    font-size: 1.6vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .intSecGnavi {
+    font-size: 5vw;
+  }
+}
+
+.kenSecGnavi {
+  line-height: 1.7;
+  letter-spacing: 0.06em;
+  font-feature-settings: "palt";
+  font-weight: 500;
+}
+@media screen and (min-width: 1025px) {
+  .kenSecGnavi {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .kenSecGnavi {
+    font-size: 1vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .kenSecGnavi {
+    font-size: 3.125vw;
+  }
+}
+
+.trigerGnavi {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: 1px solid #c4c4c4;
+  line-height: 1.7;
+  letter-spacing: 0.1em;
+  font-feature-settings: "palt";
+  font-weight: 500;
+}
+@media screen and (max-width: 1024px) {
+  .trigerGnavi {
+    padding: 3.12% 0% 3.12% 0%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .trigerGnavi {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .trigerGnavi {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .trigerGnavi {
+    font-size: 3.75vw;
+  }
+}
+
+.buttonSubGnavi {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: 1px solid #c4c4c4;
+  line-height: 1.7;
+  letter-spacing: 0.1em;
+  font-feature-settings: "palt";
+  font-weight: 500;
+  color: #000;
+}
+@media screen and (max-width: 1024px) {
+  .buttonSubGnavi {
+    padding: 2.18% 0% 2.18% 0%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .buttonSubGnavi {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .buttonSubGnavi {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .buttonSubGnavi {
+    font-size: 3.75vw;
+  }
+}
+
+.iconSubGnavi {
+  padding: 0 0 0 10%;
+}
+
+.iconSubGnavi01 {
+  background: url(/img/IconBlog.svg) no-repeat center left;
+  background-size: auto 90%;
+}
+
+.iconSubGnavi02 {
+  background: url(/img/IconBook.svg) no-repeat center left;
+  background-size: auto 90%;
+}
+
+.liGnavi02 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1024px) {
+  .liGnavi02 {
+    margin-top: 3.12%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.iconSubGnavi03 {
+  background: url(/img/IconMegaphone.svg) no-repeat center left;
+  background-size: auto 90%;
+}
+
+.iconSubGnavi04 {
+  background: url(/img/IconBlog02.svg) no-repeat center left;
+  background-size: auto 90%;
+}
+
+.iconSubGnavi05 {
+  background: url(/img/IconSheet.svg) no-repeat center left;
+  background-size: auto 100%;
+}
+
+.iconSubGnavi06 {
+  background: url(/img/IconSheet.svg) no-repeat center left;
+  background-size: auto 100%;
+}
+
+.paginate p.leading-5 {
+  display: none;
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .footer {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding: 25% 0% 0% 0%;
+  }
+}
 /*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com *//*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
