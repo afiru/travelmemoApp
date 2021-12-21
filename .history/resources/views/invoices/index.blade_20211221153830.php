@@ -6,12 +6,10 @@
                 <h2 class="t_center h2Mypage">請求書</h2>
             </section>
 
-            <form action="post" method="/invoices">
-                @csrf
-                @if(empty($invoices))
-                @else
+                <form action="post" method="/invoices">
                     <div class="invoices">
                         <!--高さ固定でoverflow auto スクロールバーは消したいね-->
+                        @csrf
                         @foreach($invoices as $invoice)
                         <div class="display_flex_stretch invoicesLoop">
                             <div class="invoiceDel">
@@ -24,27 +22,8 @@
                         </div>
                         @endforeach
                     </div>
-
-                    <div class="display_flex_stretch invoicesButtosWap">
-                        <div class="buttonSubmitWap">
-                            <button type="submit" class="buttonAddCheangePost">
-                                削除
-                            </button>
-                        </div>
-                        <section class="priceSecInvoice">
-                            <p class="t_right display_flex_stretch_bottom txtPriceSecInvoice">
-                                <span class="taniPriceSecInvoice">総合計</span>
-                                <span class="yenPriceSecInvoice">¥{{ number_format($sum) }}</span>
-                            </p>
-                            <p class="t_right display_flex_stretch_bottom txtPriceSecInvoice">
-                                <span class="taniPriceSecInvoice">一人あたり</span>
-                                <span class="yenPriceSecInvoice">¥{{ number_format($personSum) }}</span>
-                            </p>
-                        </section>
-                    </div>
-                @endif
-            </form>
-
+                </form>
+            </div>
         </div>
     </div>
 </x-app-layout>
