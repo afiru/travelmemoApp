@@ -467,7 +467,9 @@ form {
 }
 
 .buttonAddCheangePost {
-  height: 5vw;
+  width: 30%;
+  height: 50px;
+  display: block;
   background: #FFA300;
   color: #fff;
   font-weight: 600;
@@ -482,7 +484,6 @@ form {
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
 }
 @media screen and (max-width: 1024px) {
   .buttonAddCheangePost {

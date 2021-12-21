@@ -23,7 +23,9 @@ form {
     }
 }
 .buttonAddCheangePost {
-    height: 5vw;
+    width: 30%;
+    height: 50px;
+    display: block;
     background: #FFA300;
     color: #fff;
     font-weight: 600;
@@ -33,7 +35,6 @@ form {
     @include rs_font_size(12px,1.2vw,3.75vw);
     //フォント（px）【PC】:12px |【Tab】12px |【sp】 12px
     //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
-    width: 30%;
     @include media(sp){
         width: 100%;
         height: 11.2vw;
