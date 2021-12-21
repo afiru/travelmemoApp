@@ -717,6 +717,21 @@
   width: 50%;
   text-align: right;
 }
+@media screen and (min-width: 1025px) {
+  .invoicesForm .yenPriceSecInvoice {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .invoicesForm .yenPriceSecInvoice {
+    font-size: 1.7vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .invoicesForm .yenPriceSecInvoice {
+    font-size: 5.3125vw;
+  }
+}
 
 .header {
   padding-top: 10px;

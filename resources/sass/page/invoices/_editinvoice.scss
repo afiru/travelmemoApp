@@ -35,5 +35,8 @@
     .yenPriceSecInvoice {
         width: 50%;
         text-align: right;
+        @include rs_font_size(17px,1.7vw,5.3125vw);
+        //フォント（px）【PC】:17px |【Tab】17px |【sp】 17px
+        //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
     }
 }
