@@ -24,7 +24,7 @@
 .timeBookingArchivesFx{
     @include paddingPercent(300 , 13 , 9 , 0 , 9);
     width: 100%;
-    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
 }
 .dateGenrePosts{
     @include paddingPercent(300 , 0 , 9 , 13 , 9);
