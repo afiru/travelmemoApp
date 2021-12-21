@@ -1,4 +1,5 @@
 .myPageMain {
+    box-shadow: 1px 8px 7px 1px rgba(0, 0, 0, .1);
     @include paddingPercent(320 , 21 , 0 , 70 , 0);
 }
 .h2Mypage {
