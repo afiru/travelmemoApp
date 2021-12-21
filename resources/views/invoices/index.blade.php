@@ -7,6 +7,7 @@
             </section>
 
             <div class="invoices">
+                <!--高さ固定でoverflow auto スクロールバーは消したいね-->
                 <form action="post" method="/invoices">
                     @csrf
                     @foreach($invoices as $invoice)
@@ -14,6 +15,9 @@
                         <div class="invoiceDel">
                             <input type="checkbox" name="invoiceDel[]" value="{{ $invoice->id }}">
                         </div>
+                        <p class="invoiceGenre"></p>
+                        <h2 class="invoiceGenre">{{ $invoice->itemName }}</h2>
+
                     </div>
                     @endforeach
                 </form>
