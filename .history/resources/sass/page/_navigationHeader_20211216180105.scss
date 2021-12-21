@@ -1,0 +1,36 @@
+.header {
+    @include paddingPercent(320 , 10 , 10 , 10 , 10 );
+}
+.logoutMenuHeader {
+    width: 58px;
+    .logout {
+        width: 24px;
+    }
+    .menu {
+        position: relative;
+        width: 24px;
+        height: 21px;
+    }
+}
+.logoutMenuHeader .menu {
+    .borderMenu {
+        display: block;
+        height: 3px;
+        width: 24px;
+        background: #999999;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+}
+.logoutMenuHeader .menu.off {
+    .borderMenu01 {
+        top: 0;
+    }
+    .borderMenu02 {
+        top: 10px;
+    }
+    .borderMenu03 {
+        top: 10px;
+    }
+}

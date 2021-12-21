@@ -1,0 +1,9 @@
+.header {
+    @include paddingPercent(320 , 10 , 10 , 10 , 10 );
+}
+.logoutMenuHeader {
+    width: 58px;
+    .logout {
+        width: 24px;
+    }
+}

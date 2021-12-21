@@ -1,0 +1,191 @@
+.header {
+    @include paddingPercent(320 , 10 , 10 , 10 , 10 );
+}
+.logoutMenuHeader {
+    width: 58px;
+    @include marginPercent(320 , 5 , 0 , 0 , 0 );
+    .logout {
+        width: 24px;
+    }
+    .menu {
+        position: relative;
+        width: 24px;
+        height: 21px;
+        cursor: pointer;
+        z-index: 9999999999;
+    }
+}
+.logout form {
+    display: block;
+}
+.jsMenuOpen{
+
+}
+.logoutMenuHeader .menu {
+    .borderMenu {
+        display: block;
+        height: 3px;
+        width: 24px;
+        background: #999999;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition-duration: 0.5s;
+    }
+}
+.logoutMenuHeader .menu.off {
+    .borderMenu01 {
+        top: 0;
+    }
+    .borderMenu02 {
+        top: 9px;
+    }
+    .borderMenu03 {
+        top: 19px;
+    }
+}
+
+.logoutMenuHeader .menu.on {
+    .borderMenu01 {
+        top: 9px;
+        transform: rotate(45deg);
+    }
+    .borderMenu02 {
+        top: 9px;
+        opacity: 0;
+    }
+    .borderMenu03 {
+        top: 9px;
+        transform: rotate(-45deg);
+    }
+}
+.gNvi {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255 , 255 , 255 , 0.9);
+    display: none;
+}
+.gNaviCnt {
+    width: 80vw;
+    margin: 5vh auto;
+    height: 90vh;
+    overflow: scroll;
+}
+.secGnavi {
+    @include marginPercent(320 , 15 , auto , 0 , auto );
+    @include paddingPercent(320 , 0 , 0 , 5 , 0);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid #c4c4c4;
+}
+.txtSecGnavi{
+    min-width: 50%;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.txtSecGnavi+.txtSecGnavi{
+    justify-content: flex-end;
+}
+.titleSecGnavi{
+    line-height: 1.7;
+    letter-spacing:0.1em;
+    font-feature-settings: "palt";
+    font-weight: 500;
+    @include rs_font_size(12px,1.2vw,3.75vw);
+    //フォント（px）【PC】:12px |【Tab】12px |【sp】 12px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.intSecGnavi{
+    margin: 0 2%;
+    line-height: 1.7;
+    letter-spacing:0.06em;
+    font-feature-settings: "palt";
+    font-weight: 500;
+    @include rs_font_size(16px,1.6vw,5vw);
+    //フォント（px）【PC】:16px |【Tab】16px |【sp】 16px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.kenSecGnavi{
+    line-height: 1.7;
+    letter-spacing:0.06em;
+    font-feature-settings: "palt";
+    font-weight: 500;
+    @include rs_font_size(10px,1vw,3.125vw);
+    //フォント（px）【PC】:10px |【Tab】10px |【sp】 10px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.ulGnavi{
+
+}
+.liGnavi{
+
+}
+.trigerGnavi{
+    display: block;
+    @include paddingPercent(320 , 10 , 0 , 10 , 0);
+    border-bottom: 1px solid #c4c4c4;
+    line-height: 1.7;
+    letter-spacing:0.1em;
+    font-feature-settings: "palt";
+    font-weight: 500;
+    @include rs_font_size(12px,1.2vw,3.75vw);
+    //フォント（px）【PC】:12px |【Tab】12px |【sp】 12px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.subGnavi{
+
+}
+.liSubGnavi{
+
+}
+.buttonSubGnavi{
+    display: block;
+    @include paddingPercent(320 , 7 , 0 , 7 , 0);
+    border-bottom: 1px solid #c4c4c4;
+    line-height: 1.7;
+    letter-spacing:0.1em;
+    font-feature-settings: "palt";
+    font-weight: 500;
+    @include rs_font_size(12px,1.2vw,3.75vw);
+    //フォント（px）【PC】:12px |【Tab】12px |【sp】 12px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+    color: #000;
+}
+.iconSubGnavi{
+    padding: 0 0 0 10%;
+}
+.iconSubGnavi01{
+    //background-image: url("img/IconBlog.svg");
+    background: url(/img/IconBlog.svg) no-repeat center left;
+    background-size: auto 90%;
+}
+.iconSubGnavi02{
+    background: url(/img/IconBook.svg) no-repeat center left;
+    background-size: auto 90%;
+}
+.liGnavi02{
+    @include marginPercent(320 , 10 , auto , 0 , auto );
+}
+.iconSubGnavi03{
+    background: url(/img/IconMegaphone.svg) no-repeat center left;
+    background-size: auto 90%;
+}
+.iconSubGnavi04{
+    background: url(/img/IconBlog02.svg) no-repeat center left;
+    background-size: auto 90%;
+}
+.iconSubGnavi05{
+    background: url(/img/IconSheet.svg) no-repeat center left;
+    background-size: auto 100%;
+}
+.iconSubGnavi06{
+    background: url(/img/IconSheet.svg) no-repeat center left;
+    background-size: auto 100%;
+}
+

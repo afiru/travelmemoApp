@@ -10927,6 +10927,29 @@ var __webpack_exports__ = {};
   !*** ./resources/js/bookmark.js ***!
   \**********************************/
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+function set_csrftoken() {
+  $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
+    if (!options.crossDomain) {
+      var token = $('meta[name="csrf-token"]').attr('content');
+
+      if (token) {
+        return jqXHR.setRequestHeader('X-CSRF-Token', token);
+      }
+    }
+  });
+}
+
+$(function () {
+  $('.jsMenuOpen').on('click', function () {
+    if ($(this).hasClass('off')) {
+      $('.gNvi').fadeIn(500);
+      $(this).removeClass('off').addClass('on');
+    } else {
+      $('.gNvi').fadeOut(500);
+      $(this).removeClass('on').addClass('off');
+    }
+  });
+});
 $(function () {
   $('.jsButtonPost').on('click', function () {
     id = $(this).data('id');
