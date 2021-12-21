@@ -46,4 +46,4 @@ Route::post('/editotopic/{topicid}', [AddTopicsController::class, 'createTopic']
 //請求書
 use App\Http\Controllers\invoices\invoicesController;
 Route::get('/invoices', [invoicesController::class, 'index'])->name('invoices')->middleware('auth');
-Route::post('/invoices', [invoicesController::class, 'del'])->name('invoices')->middleware('auth');
+Route::post('/invoices', [invoicesController::class, 'index'])->name('invoices')->middleware('auth');

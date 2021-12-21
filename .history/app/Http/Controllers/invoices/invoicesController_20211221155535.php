@@ -21,6 +21,6 @@ class invoicesController extends Controller
     }
     public function del(Request $request)
     {
-        print_r($request->invoiceDel);
+
     }
 }
