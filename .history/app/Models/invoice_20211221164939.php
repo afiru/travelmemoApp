@@ -12,7 +12,7 @@ class invoice extends Model
 
     public static $rules = [
         'itemName' => 'required|max:255',
-        'itemGenre' => 'required|numeric',
+        'itemGenre' => 'required',
         'cost' => 'required|numeric',
     ];
 }

@@ -18,15 +18,15 @@ class invoicesForm extends Component
      */
     public function __construct($action="",$invoiceId=null)
     {
-
         $this->action = $action;
-        $this->invoiceId = (int)$invoiceId;
+        $this->invoiceId = $invoiceId;
         if($this->invoiceId===null)
         {
             $this->invoiceData = "";
         }
         else {
             $this->invoiceData = invoice::find($this->invoiceId);
+            print_r($this->invoiceId);
         }
     }
 

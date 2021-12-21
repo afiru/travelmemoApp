@@ -44,11 +44,12 @@ class invoicesController extends Controller
     {
         $this->validate($request, invoice::$rules);
         if(isset($request->id)){
-            $invoice = invoice::find($request->id);
+            $invoice = new invoice;
         }
         else {
             $invoice = new invoice;
         }
+
         $form = $request->all();
         unset($form['_token']);
         $invoice->fill($form)->save();

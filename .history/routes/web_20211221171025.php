@@ -49,5 +49,3 @@ Route::get('/invoices', [invoicesController::class, 'index'])->name('invoices')-
 Route::post('/invoices', [invoicesController::class, 'del'])->name('invoices')->middleware('auth');
 Route::get('/addinvoice', [invoicesController::class, 'addinvoices'])->name('addinvoice')->middleware('auth');
 Route::post('/addinvoice', [invoicesController::class, 'add'])->name('addinvoice')->middleware('auth');
-Route::get('/invoice/{invoiceid}', [invoicesController::class, 'editoinvoices'])->name('addinvoice')->middleware('auth');
-Route::post('/invoice/{invoiceid}', [invoicesController::class, 'add'])->name('addinvoice')->middleware('auth');

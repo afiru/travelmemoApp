@@ -11,8 +11,8 @@ class invoice extends Model
     protected $guarded = array('id');
 
     public static $rules = [
-        'itemName' => 'required|max:255',
-        'itemGenre' => 'required|numeric',
-        'cost' => 'required|numeric',
+        'itemName' => 'required',
+        'itemGenre' => 'required',
+        'cost' => 'required',
     ];
 }

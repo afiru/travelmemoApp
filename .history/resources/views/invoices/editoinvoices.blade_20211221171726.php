@@ -6,7 +6,7 @@
                 <h2 class="t_center h2Mypage">請求書入力</h2>
             </section>
 
-            <x-invoices.invoices-form action="/addinvoice"></x-invoices.invoices-form>
+            <x-invoices.invoices-form action="/addinvoice" ></x-invoices.invoices-form>
         </div>
     </div>
 </x-app-layout>

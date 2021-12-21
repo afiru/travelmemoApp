@@ -9,7 +9,7 @@
             type="text"
             name="itemName"
             required="required"
-            @if(isset($invoiceData->itemName))
+            @if(isset($datas->url))
             value="{{ $invoiceData->itemName }}"
             @else
             value="{{ old('itemName	') }}"
@@ -19,10 +19,10 @@
         <div class="formAddCheangePost">
             <label class="block font-medium text-sm text-gray-700" for="name">ジャンルを選択</label>
             <div class="">
-                @if(isset($invoiceData->itemGenre))
+                @if(isset($invoiceData->term))
                     <x-post.add-post-form-genre genre="term" name="itemGenre" datas="{{ $invoiceData->itemGenre }}"></x-post.add-post-form-genre>
                 @else
-                    <x-post.add-post-form-genre genre="term" name="itemGenre" datas=""></x-post.add-post-form-genre>
+                    <x-post.add-post-form-genre genre="subterm" name="itemGenre" datas=""></x-post.add-post-form-genre>
                 @endif
             </div>
         </div>
@@ -34,19 +34,19 @@
             type="number"
             name="cost"
             required="required"
-            @if(isset($invoiceData->cost))
+            @if(isset($datas->url))
             value="{{ $invoiceData->cost}}"
             @else
             value="{{ old('cost	') }}"
             @endif>
         </div>
         @if (empty($invoiceData->id))
-        <button type="submit" class="buttonInvoices">
+        <button type="submit" class="buttonAddCheangePost">
             登録します
         </button>
         @else
         <input type="hidden" name="id" value="{{ $invoiceData->id }}">
-        <button type="submit" class="buttonInvoices">
+        <button type="submit" class="buttonAddCheangePost">
             変更します
         </button>
         @endif

@@ -43,12 +43,7 @@ class invoicesController extends Controller
     public function add(Request $request)
     {
         $this->validate($request, invoice::$rules);
-        if(isset($request->id)){
-            $invoice = invoice::find($request->id);
-        }
-        else {
-            $invoice = new invoice;
-        }
+        $invoice = new invoice;
         $form = $request->all();
         unset($form['_token']);
         $invoice->fill($form)->save();

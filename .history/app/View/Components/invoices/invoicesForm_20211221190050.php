@@ -21,12 +21,15 @@ class invoicesForm extends Component
 
         $this->action = $action;
         $this->invoiceId = (int)$invoiceId;
+
+        print_r($this->invoiceId);
         if($this->invoiceId===null)
         {
             $this->invoiceData = "";
         }
         else {
             $this->invoiceData = invoice::find($this->invoiceId);
+
         }
     }
 

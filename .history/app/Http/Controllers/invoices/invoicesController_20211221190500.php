@@ -49,6 +49,7 @@ class invoicesController extends Controller
         else {
             $invoice = new invoice;
         }
+
         $form = $request->all();
         unset($form['_token']);
         $invoice->fill($form)->save();

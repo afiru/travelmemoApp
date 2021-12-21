@@ -34,7 +34,7 @@
             type="number"
             name="cost"
             required="required"
-            @if(isset($invoiceData->cost))
+            @if(isset($datas->url))
             value="{{ $invoiceData->cost}}"
             @else
             value="{{ old('cost	') }}"

@@ -27,6 +27,7 @@ class invoicesForm extends Component
         }
         else {
             $this->invoiceData = invoice::find($this->invoiceId);
+
         }
     }
 
