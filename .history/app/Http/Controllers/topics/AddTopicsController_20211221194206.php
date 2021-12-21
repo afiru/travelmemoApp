@@ -77,7 +77,7 @@ class AddTopicsController extends Controller
         $topic = topic::find($topicid);
         if($topic === null)
         {
-            return redirect('/topics');
+
         }
         else
         {

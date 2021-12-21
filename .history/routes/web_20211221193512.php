@@ -38,7 +38,7 @@ use App\Http\Controllers\topics\AddTopicsController;
 Route::get('/topics', [AddTopicsController::class, 'index'])->name('topics')->middleware('auth');
 Route::get('/addtopic', [AddTopicsController::class, 'addtopic'])->name('addtopic')->middleware('auth');
 Route::post('/addtopic', [AddTopicsController::class, 'createTopic'])->middleware('auth');
-Route::get('/topic/{topicid}', [AddTopicsController::class, 'topic'])->name('topic')->middleware('auth');
+Route::get('/topic/{topicid}', [AddTopicsController::class, 'index'])->name('topics')->middleware('auth');
 //編集
 Route::get('/editotopic/{topicid}', [AddTopicsController::class, 'editotopic'])->name('editotopic')->middleware('auth');
 Route::post('/editotopic/{topicid}', [AddTopicsController::class, 'createTopic'])->name('editotopic')->middleware('auth');

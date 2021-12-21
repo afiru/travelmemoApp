@@ -13,16 +13,17 @@ use App\Models\topic;
 class topicsArchives extends Component
 {
     public $limit;
+
     public $topics;
+
     public $haslink;
+
     public $haspaginate;
-    public $del;
 
 
 
-    public function __construct($limit = 0, $topics=null,$haslink=false,$haspaginate=false,$del=false)
+    public function __construct($limit = 0, $topics=null,$haslink=false,$haspaginate=false)
     {
-        $this->del = (boolean)$del;
         $this->limit = $limit;
         $this->haslink = $haslink;
         $this->haspaginate = $haspaginate;

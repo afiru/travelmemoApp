@@ -1,7 +1,7 @@
 <article class="topicsArchives">
-    <form action="/deltopics" method="post">
     @if(empty($topics ))
     @else
+    <form action="/deltopics" method="post">
         @csrf
         @foreach($topics as $topic)
             <section class="secTopicsArchives">
@@ -19,6 +19,7 @@
                 </a>
             </section>
         @endforeach
+    </form>
     @endif
 
 
@@ -28,17 +29,9 @@
         </div>
     @endif
 
-    @if($del === true)
-    <div class="buttonMoreTopicsWap">
-        <button type="submit" class="buttonMoreTopics">削除</button>
-    </div>
-    @endif
-
-
     @if($haspaginate === "true")
         <div class="display_flex_center paginate">
             {{ $topics }}
         </div>
     @endif
-    </form>
 </article>

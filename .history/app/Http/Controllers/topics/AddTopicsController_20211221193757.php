@@ -9,7 +9,6 @@ use App\Models\post;
 use App\Models\user_point;
 use App\Models\invoice;
 use App\Models\topic;
-use App\View\Components\topics;
 
 class AddTopicsController extends Controller
 {
@@ -75,13 +74,7 @@ class AddTopicsController extends Controller
     public function topic($topicid = null)
     {
         $topic = topic::find($topicid);
-        if($topic === null)
-        {
-            return redirect('/topics');
-        }
-        else
-        {
-            return view('topics.topic',['topic'=>$topic]);
-        }
+        echo $topic;
+
     }
 }

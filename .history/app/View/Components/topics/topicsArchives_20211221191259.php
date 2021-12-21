@@ -20,9 +20,9 @@ class topicsArchives extends Component
 
 
 
-    public function __construct($limit = 0, $topics=null,$haslink=false,$haspaginate=false,$del=false)
+    public function __construct($limit = 0, $topics=null,$haslink=false,$haspaginate=false,$del="")
     {
-        $this->del = (boolean)$del;
+        $this->del = $del;
         $this->limit = $limit;
         $this->haslink = $haslink;
         $this->haspaginate = $haspaginate;

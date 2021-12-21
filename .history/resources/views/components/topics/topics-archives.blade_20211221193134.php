@@ -31,6 +31,7 @@
     @if($del === true)
     <div class="buttonMoreTopicsWap">
         <button type="submit" class="buttonMoreTopics">削除</button>
+        <a href="/topics" class="buttonLogin buttonMoreTopics"></a>
     </div>
     @endif
 

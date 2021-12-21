@@ -75,13 +75,7 @@ class AddTopicsController extends Controller
     public function topic($topicid = null)
     {
         $topic = topic::find($topicid);
-        if($topic === null)
-        {
-            return redirect('/topics');
-        }
-        else
-        {
-            return view('topics.topic',['topic'=>$topic]);
-        }
+        var_dump($topic);
+        return view('topics.topic',['topic'=>$topic]);
     }
 }
