@@ -5,9 +5,7 @@ namespace App\View\Components\topics;
 use Illuminate\View\Component;
 use Illuminate\Support\Facades\Auth;
 //Model
-use App\Models\post;
-use App\Models\user_point;
-use App\Models\invoice;
+
 use App\Models\topic;
 
 class topicsArchives extends Component
@@ -27,7 +25,7 @@ class topicsArchives extends Component
         $this->haslink = $haslink;
         $this->haspaginate = $haspaginate;
         $this->topics = topic::orderBy('UPDATED_AT','desc')->paginate($this->limit);
-        print_r($this->del);
+
     }
 
     /**
