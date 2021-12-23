@@ -26,8 +26,16 @@ class topicsArchives extends Component
         $this->limit = $limit;
         $this->haslink = $haslink;
         $this->haspaginate = $haspaginate;
-        $this->topics = topic::orderBy('UPDATED_AT','desc')->paginate($this->limit);
-        print_r($this->topics);
+        $topics = topic::orderBy('UPDATED_AT','desc')->paginate(10);
+        if(empty($topics))
+        {
+            $this->topics = "";
+        }
+        else
+        {
+            $this->topics = $topics;
+        }
+
     }
 
     /**
