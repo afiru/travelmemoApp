@@ -8,7 +8,7 @@ use Illuminate\View\Component;
 
 use App\Models\topic;
 
-class topicsArchives extends Component
+class topicsarchives extends Component
 {
     public $limit;
     public $topics;
@@ -38,6 +38,6 @@ class topicsArchives extends Component
      */
     public function render()
     {
-        return view('components.topics.topics-archives');
+        return view('components.topics.topicsarchives');
     }
 }

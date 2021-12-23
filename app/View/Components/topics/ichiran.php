@@ -4,23 +4,19 @@ namespace App\View\Components\topics;
 
 use Illuminate\View\Component;
 
-//Model
-
 use App\Models\topic;
 
-class topicsArchives extends Component
+class ichiran extends Component
 {
     public $limit;
     public $topics;
     public $haslink;
     public $haspaginate;
     public $del;
-
-
     /**
-     * Get the view / contents that represent the component.
+     * Create a new component instance.
      *
-     * @return \Illuminate\Contracts\View\View|\Closure|string
+     * @return void
      */
     public function __construct($limit = 0, $topics=null,$haslink=false,$haspaginate=false,$del=false)
     {
@@ -38,6 +34,6 @@ class topicsArchives extends Component
      */
     public function render()
     {
-        return view('components.topics.topics-archives');
+        return view('components.topics.ichiran');
     }
 }
