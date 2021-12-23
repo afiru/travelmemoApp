@@ -20,22 +20,13 @@ class topicsArchives extends Component
 
 
 
-    public function __construct($limit = 0, $topics=null,$haslink=false,$haspaginate=false,$del=false,$topics=0)
+    public function __construct($limit = 0, $topics=null,$haslink=false,$haspaginate=false,$del=false)
     {
         $this->del = (boolean)$del;
         $this->limit = $limit;
         $this->haslink = $haslink;
         $this->haspaginate = $haspaginate;
-        $topics = topic::orderBy('UPDATED_AT','desc')->paginate(10);
-        if(empty($topics))
-        {
-            $this->topics = "";
-        }
-        else
-        {
-            $this->topics = $topics;
-        }
-
+        $this->topics = topic::orderBy('UPDATED_AT','desc')->paginate(20);
     }
 
     /**
