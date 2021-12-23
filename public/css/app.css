@@ -572,12 +572,12 @@
 
 .timeTopics {
   background: url(/img/timeTopics_icon.svg) no-repeat 2% center;
-  background-size: auto 80%;
+  background-size: auto 70%;
   display: block;
   width: 100%;
   font-weight: 600;
   color: #999999;
-  padding-top: 0px;
+  padding-top: 3px;
   padding-bottom: 0px;
   padding-left: 25px;
   padding-right: 0px;
@@ -599,7 +599,7 @@
 }
 @media screen and (max-width: 1024px) {
   .timeTopics {
-    padding: 0% 0% 0% 7.81%;
+    padding: 0.93% 0% 0% 7.81%;
   }
 }
 

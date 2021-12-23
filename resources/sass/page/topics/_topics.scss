@@ -17,7 +17,7 @@
 }
 .timeTopics {
     background: url(/img/timeTopics_icon.svg) no-repeat 2% center;
-    background-size: auto 80%;
+    background-size: auto 70%;
     display: block;
     width: 100%;
     font-weight: 600;
@@ -25,7 +25,7 @@
     @include rs_font_size(11px,1.1vw,3.4375vw);
     //フォント（px）【PC】:11px |【Tab】11px |【sp】 11px
     //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
-    @include paddingPercent(320 , 0 , 0 , 0 , 25);
+    @include paddingPercent(320 , 3 , 0 , 0 , 25);
 }
 .buttonTopicsArchives {
     display: block;
