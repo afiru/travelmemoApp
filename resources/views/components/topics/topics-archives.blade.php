@@ -1,6 +1,6 @@
 <article class="topicsArchives">
-    ---------------
-    <form action="/deltopics" method="post">
+     <form action="/deltopics" method="post">
+        {{ $topics }}
     @if(empty($topics ))
     @else
         @csrf
