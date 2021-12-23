@@ -1,0 +1,16 @@
+.buttonInvoices {
+    text-align: center;
+    width: 20%;
+    height: 42px;
+    background: #FFA300;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include kadomaru(5px);
+    @include marginPercent(320 , 30 , auto , 0 , auto);
+    @include media(sp) {
+        width: 100%;
+        height: 11.2vw;
+    }
+}

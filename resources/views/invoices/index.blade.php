@@ -18,7 +18,7 @@
                                 <input type="checkbox" name="invoiceDel[]" value="{{ $invoice->id }}">
                             </div>
                             <p class="invoiceGenre">{{ config('postTerms.parentTerms')[$invoice->itemGenre] }}</p>
-                            <h2 class="invoiceGenre">{{ $invoice->itemName }}</h2>
+                            <h2 class="invoiceGenre invoiceGenreBold">{{ Str::limit($invoice->itemName, 14, '...') }}</h2>
                             <p class="invoicePrice">{{number_format($invoice->cost)}}円</p>
                             <a class="invoiceButton" href="/invoice/{{ $invoice->id }}">編集</a>
                         </div>

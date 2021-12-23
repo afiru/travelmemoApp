@@ -2,21 +2,70 @@
     box-shadow: 1px 8px 7px 1px rgba(0, 0, 0, .1);
     @include paddingPercent(320 , 21 , 0 , 21 , 0);
 }
+.invoices {
+    border-top: solid 1px #C4C4C4;
+}
+.invoicesLoop {
+    align-items: center;
+    border-bottom: solid 1px #C4C4C4;
+    @include paddingPercent(320 , 7 , 10 , 7 , 10);
+}
+.invoiceGenre {
+    text-align: left;
+    width: 20%;
+    @include rs_font_size(16px,1.6vw,3.125vw);
+    //フォント（px）【PC】:16px |【Tab】16px |【sp】 10px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.invoiceGenreBold {
+    font-weight: 600;
+    width: 28%;
+}
+.invoicePrice {
+    text-align: right;
+    font-weight: 600;
+    width: 18%;
+    @include rs_font_size(16px,1.6vw,3.125vw);
+    //フォント（px）【PC】:16px |【Tab】16px |【sp】 10px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.invoiceButton {
+    width: 10%;
+    height: 25px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include kadomaru(7px);
+    @include rs_font_size(16px,1.6vw,3.125vw);
+    //フォント（px）【PC】:16px |【Tab】16px |【sp】 10px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+    @include media(sp) {
+        width: 15%;
+        height: 5.333333333333333vw;
+    }
+}
 .invoicesForm {
     @include marginPercent(1000 , 30 , 0 , 0 , 0);
     @include paddingPercent(1000 , 0 , 30 , 0 , 30);
     @include media(sp) {
         @include marginPercent(320 , 10 , 0 , 0 , 0);
-        @include paddingPercent(320 , 0 , 11 , 0 , 11);
+        @include paddingPercent(320 , 0 , 0 , 0 , 0);
+    }
+    .invoicesButtosWap {
+        @include marginPercent(320 , 10 , 0 , 0 , 0);
+        @include paddingPercent(320 , 0 , 10 , 0 , 10);
     }
     .buttonSubmitWap {
         width: 26%;
     }
-    .buttonAddCheangePost {
+    .buttonDllInvoice {
         height: 40px;
         width: 70%;
         margin-top: 0;
         vertical-align: center;
+        color: #fff;
         background: #000;
         @include kadomaru(8px);
         @include media(sp) {
@@ -25,7 +74,7 @@
         }
     }
     .priceSecInvoice {
-        width: 45%;
+        width: 65%;
         font-weight: 600;
     }
     .taniPriceSecInvoice {
