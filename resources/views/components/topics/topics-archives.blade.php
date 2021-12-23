@@ -37,7 +37,7 @@
 
     @if($haspaginate === "true")
         <div class="display_flex_center paginate">
-            {{ $topics }}
+
         </div>
     @endif
     </form>
