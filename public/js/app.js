@@ -22701,9 +22701,12 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
   \*********************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Can't find stylesheet to import.\n   ╷\n35 │ @import 'page/post/_addpostserch';\r\n   │         ^^^^^^^^^^^^^^^^^^^^^^^^^\n   ╵\n  resources\\sass\\app.scss 35:9  root stylesheet\n    at processResult (D:\\travelmemoApp\\node_modules\\webpack\\lib\\NormalModule.js:751:19)\n    at D:\\travelmemoApp\\node_modules\\webpack\\lib\\NormalModule.js:853:5\n    at D:\\travelmemoApp\\node_modules\\loader-runner\\lib\\LoaderRunner.js:399:11\n    at D:\\travelmemoApp\\node_modules\\loader-runner\\lib\\LoaderRunner.js:251:18\n    at context.callback (D:\\travelmemoApp\\node_modules\\loader-runner\\lib\\LoaderRunner.js:124:13)\n    at D:\\travelmemoApp\\node_modules\\sass-loader\\dist\\index.js:54:7\n    at Function.call$2 (D:\\travelmemoApp\\node_modules\\sass\\sass.dart.js:96930:16)\n    at render_closure1.call$2 (D:\\travelmemoApp\\node_modules\\sass\\sass.dart.js:82802:12)\n    at _RootZone.runBinary$3$3 (D:\\travelmemoApp\\node_modules\\sass\\sass.dart.js:28524:18)\n    at _FutureListener.handleError$1 (D:\\travelmemoApp\\node_modules\\sass\\sass.dart.js:27046:21)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
