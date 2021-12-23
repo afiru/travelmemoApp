@@ -17,7 +17,11 @@ class topicsArchives extends Component
     public $del;
 
 
-
+    /**
+     * Get the view / contents that represent the component.
+     *
+     * @return \Illuminate\Contracts\View\View|\Closure|string
+     */
     public function __construct($limit = 0, $topics=null,$haslink=false,$haspaginate=false,$del=false)
     {
         $this->del = (boolean)$del;

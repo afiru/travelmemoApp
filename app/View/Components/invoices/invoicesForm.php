@@ -11,11 +11,7 @@ class invoicesForm extends Component
     public $invoiceId;
     public $invoiceData;
 
-    /**
-     * Create a new component instance.
-     *
-     * @return void
-     */
+
     public function __construct($action="",$invoiceId=null)
     {
 

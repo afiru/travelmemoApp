@@ -7,18 +7,10 @@ use App\Models\invoice;
 
 class sumInvoice extends Component
 {
-    /**
-     * Create a new component instance.
-     *
-     * @return int
-     */
+
     public $totalPayPerson;
 
-    /**
-     * Create a new component instance.
-     *
-     * @return int
-     */
+
     public $intPerson;
 
 
