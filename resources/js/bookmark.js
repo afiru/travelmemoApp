@@ -51,3 +51,10 @@ $(function () {
         $(this).next('.navSpMenu').slideToggle();
     });
 });
+
+
+$(function () {
+    $('.buttonLogin').click(function() {
+        alert('clickイベントが発生しました。');
+    });
+});

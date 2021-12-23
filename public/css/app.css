@@ -327,6 +327,7 @@
 
 .myPageMainWap {
   padding: 0;
+  position: relative;
 }
 
 /* .myPageMain{
@@ -368,6 +369,19 @@
   }
 }
 
+.ScrollWap {
+  height: 90vw;
+  overflow: auto;
+  -ms-overflow-style: none;
+  /* IE, Edge 対応 */
+  scrollbar-width: none;
+  /* Firefox 対応 */
+}
+.ScrollWap::-webkit-scrollbar {
+  /* Chrome, Safari 対応 */
+  display: none;
+}
+
 .postsArchivesLoop {
   padding-top: 13px;
   padding-bottom: 13px;
@@ -382,6 +396,13 @@
   }
 }
 
+.chackTimePosts {
+  width: 51.97%;
+}
+
+.timePosts {
+  color: #999;
+}
 @media screen and (min-width: 1025px) {
   .timePosts {
     font-size: 9px;
@@ -398,6 +419,10 @@
   }
 }
 
+.buttonEditoPosts {
+  color: #999;
+  text-decoration: underline;
+}
 @media screen and (min-width: 1025px) {
   .buttonEditoPosts {
     font-size: 9px;
@@ -411,6 +436,300 @@
 @media screen and (max-width: 749px) {
   .buttonEditoPosts {
     font-size: 2.8125vw;
+  }
+}
+
+.bookingsPostsWap {
+  width: 35.48%;
+  display: flex;
+  align-items: center;
+}
+
+.numberBookingPost {
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconNumberBookingPosts {
+  width: 10.1%;
+}
+
+.intBookings {
+  width: 20.2%;
+  text-align: center;
+}
+@media screen and (min-width: 1025px) {
+  .intBookings {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .intBookings {
+    font-size: 0.9vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .intBookings {
+    font-size: 2.8125vw;
+  }
+}
+
+.unitBookings {
+  width: 50.5%;
+}
+@media screen and (min-width: 1025px) {
+  .unitBookings {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .unitBookings {
+    font-size: 0.9vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .unitBookings {
+    font-size: 2.8125vw;
+  }
+}
+
+.buttonPost {
+  width: 36.36%;
+}
+@media screen and (min-width: 1025px) {
+  .buttonPost {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .buttonPost {
+    font-size: 0.9vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .buttonPost {
+    font-size: 2.8125vw;
+  }
+}
+
+.buttonBookingsPosts {
+  width: 50.5%;
+  background: #FFA300;
+  color: #FFF;
+  border-radius: 5px;
+  /* CSS3草案 */
+  -webkit-border-radius: 5px;
+  /* Safari,Google Chrome用 */
+  -moz-border-radius: 5px;
+  /* Firefox用 */
+  text-align: center;
+}
+
+.datePosts {
+  margin-top: 13px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .datePosts {
+    margin: 4.33% 0% 0% 0%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .datePosts {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .datePosts {
+    font-size: 0.9vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .datePosts {
+    font-size: 2.8125vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .txtPostsInfo {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .txtPostsInfo {
+    font-size: 0.9vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .txtPostsInfo {
+    font-size: 2.8125vw;
+  }
+}
+
+.GenrePosts {
+  margin-top: 13px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 37.66%;
+}
+@media screen and (max-width: 1024px) {
+  .GenrePosts {
+    margin: 4.33% 0% 0% 0%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .GenrePosts {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .GenrePosts {
+    font-size: 0.9vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .GenrePosts {
+    font-size: 2.8125vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .txtPostsInfo {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .txtPostsInfo {
+    font-size: 0.9vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .txtPostsInfo {
+    font-size: 2.8125vw;
+  }
+}
+
+.underline {
+  color: #18A0FB;
+}
+@media screen and (min-width: 1025px) {
+  .underline {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .underline {
+    font-size: 1.1vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .underline {
+    font-size: 3.4375vw;
+  }
+}
+
+.buttonLogin {
+  width: 20%;
+  position: absolute;
+  bottom: 2%;
+  left: 6%;
+}
+
+.searchPostsOpen {
+  width: 26.66%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.searchPosts {
+  height: 100%;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 0px;
+  padding-left: 27px;
+  padding-right: 27px;
+  background: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+@media screen and (max-width: 1024px) {
+  .searchPosts {
+    padding: 21.33% 7.2% 0% 7.2%;
+  }
+}
+
+.itemSearchPostsInput {
+  width: 100%;
+}
+
+@media screen and (min-width: 1025px) {
+  .searchPostsOpen {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .searchPostsOpen {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .searchPostsOpen {
+    font-size: 3.75vw;
+  }
+}
+
+.searchPostsOpen img {
+  margin: 0 auto;
+}
+
+.buttonSearchPostsWap {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10.9375vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  background: #FFA300;
+  border-radius: 5px;
+  /* CSS3草案 */
+  -webkit-border-radius: 5px;
+  /* Safari,Google Chrome用 */
+  -moz-border-radius: 5px;
+  /* Firefox用 */
+  font-weight: 600;
+}
+@media screen and (max-width: 1024px) {
+  .buttonSearchPostsWap {
+    margin-top: 5.33%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .buttonSearchPostsWap {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .buttonSearchPostsWap {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .buttonSearchPostsWap {
+    font-size: 3.75vw;
   }
 }
 

@@ -1,5 +1,6 @@
 .myPageMainWap{
     padding: 0;
+    position: relative;
 }
 /* .myPageMain{
     @include paddingPercent(300 , 20 , 0 , 0 , 0);
@@ -18,6 +19,15 @@
 .postsArchives{
     @include marginPercent(300 , 13 , auto , 0 , auto);
 }
+.ScrollWap{
+    height: 90vw;
+    overflow: auto;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;       /* Firefox 対応 */
+    &::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+        display:none;
+    }
+}
 .postsArchivesLoop{
     @include paddingPercent(300 , 13 , 9 , 13 , 9);
     width: 100%;
@@ -26,16 +36,105 @@
 .timeBookingArchivesFx{
 
 }
-.dateGenrePosts{
-
+.chackTimePosts{
+    @include ontener_width(279 , 145);
 }
 .timePosts{
+    color: #999;
     @include rs_font_size(9px,0.9vw,2.8125vw);
     //フォント（px）【PC】:9px |【Tab】9px |【sp】 9px
     //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
 }
 .buttonEditoPosts{
+    color: #999;
+    text-decoration: underline;
     @include rs_font_size(9px,0.9vw,2.8125vw);
     //フォント（px）【PC】:9px |【Tab】9px |【sp】 9px
     //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
 }
+.bookingsPostsWap{
+    @include ontener_width(279 , 99);
+    display: flex;
+    align-items: center;
+}
+.numberBookingPost{
+    display: flex;
+    justify-content: space-between;
+}
+.iconNumberBookingPosts{
+    @include ontener_width(99 , 10);
+}
+.intBookings{
+    @include ontener_width(99 , 20);
+    text-align: center;
+    @include rs_font_size(9px,0.9vw,2.8125vw);
+    //フォント（px）【PC】:9px |【Tab】9px |【sp】 9px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.unitBookings{
+    @include ontener_width(99 , 50);
+    @include rs_font_size(9px,0.9vw,2.8125vw);
+    //フォント（px）【PC】:9px |【Tab】9px |【sp】 9px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.buttonPost{
+    @include ontener_width(99 , 36);
+    @include rs_font_size(9px,0.9vw,2.8125vw);
+    //フォント（px）【PC】:9px |【Tab】9px |【sp】 9px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.buttonBookingsPosts{
+    @include ontener_width(99 , 50);
+    background: #FFA300;
+    color:#FFF;
+    @include kadomaru(5px);
+    text-align: center;;
+}
+.dateGenrePosts{
+
+}
+.datePosts{
+    @include marginPercent(300 , 13 , 0 , 0 , 0);
+    @include rs_font_size(9px,0.9vw,2.8125vw);
+    //フォント（px）【PC】:9px |【Tab】9px |【sp】 9px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.txtPostsInfo{
+    @include rs_font_size(9px,0.9vw,2.8125vw);
+    //フォント（px）【PC】:9px |【Tab】9px |【sp】 9px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.GenrePosts{
+    @include marginPercent(300 , 13 , 0 , 0 , 0);
+    @include ontener_width(300 , 113);
+    @include rs_font_size(9px,0.9vw,2.8125vw);
+    //フォント（px）【PC】:9px |【Tab】9px |【sp】 9px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.txtPostsInfo{
+    @include rs_font_size(9px,0.9vw,2.8125vw);
+    //フォント（px）【PC】:9px |【Tab】9px |【sp】 9px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.underline{
+    color: #18A0FB;
+    @include rs_font_size(11px,1.1vw,3.4375vw);
+    //フォント（px）【PC】:11pxpx |【Tab】11px |【sp】 11px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.buttonLogin{
+    @include ontener_width(300 , 60);
+    position: absolute;
+    bottom: 2%;
+    left: 6%;
+}
+.searchPostsOpen {
+    @include ontener_width(300 , 80);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+

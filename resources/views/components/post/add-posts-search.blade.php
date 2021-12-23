@@ -1,5 +1,6 @@
 <div class="searchPosts bgSearchPosts jsSearchPosts">
     <div class="wapper poRe serchPostsFormWap">
+        <h2 class="t_center h2Mypage">行きたいところ検索</h2>
         <div class="loginFormInput serchPostsForm">
             <form action="{{ route('posts') }}" method="get">
                 @csrf
