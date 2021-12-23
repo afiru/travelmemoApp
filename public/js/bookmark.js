@@ -10976,7 +10976,7 @@ $(function () {
   });
 });
 $(function () {
-  $('.buttonLogin').click(function () {
+  $('.jsSearchPostsClose').on('click', function () {
     alert('clickイベントが発生しました。');
   });
 });

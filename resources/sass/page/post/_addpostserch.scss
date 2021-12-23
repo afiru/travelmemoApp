@@ -1,0 +1,38 @@
+.searchPosts{
+    height: 100%;
+    width: 100%;
+    @include paddingPercent(375 , 80 , 27 , 0 , 27);
+    background: rgba(255 , 255 , 255 , 0.6);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 10;
+}
+.serchPostsFormWap{
+
+}
+.itemSearchPostsInput{
+    width: 100%;;
+}
+.searchPostsOpen {
+    @include rs_font_size(12px,1.2vw,3.75vw);
+    //フォント（px）【PC】:12px |【Tab】12px |【sp】 12px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.searchPostsOpen img{
+    margin: 0 auto;
+}
+.buttonSearchPostsWap{
+    @include marginPercent(375 , 20 , auto , 0 , auto);
+    height: 10.9375vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    background: #FFA300;
+    @include kadomaru(5px);
+    @include rs_font_size(12px,1.2vw,3.75vw);
+    //フォント（px）【PC】:12px |【Tab】12px |【sp】 12px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+    font-weight: 600;;
+}
