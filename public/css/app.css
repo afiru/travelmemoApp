@@ -535,7 +535,7 @@
   }
 }
 
-.myPageMain {
+.topicsMyPageMain {
   box-shadow: 1px 8px 7px 1px rgba(0, 0, 0, 0.1);
   padding-top: 21px;
   padding-bottom: 70px;
@@ -543,7 +543,7 @@
   padding-right: 0px;
 }
 @media screen and (max-width: 1024px) {
-  .myPageMain {
+  .topicsMyPageMain {
     padding: 6.56% 0% 21.87% 0%;
   }
 }
@@ -645,6 +645,111 @@
 @media screen and (max-width: 1024px) {
   .secTopicsArchives:nth-child(n+2) {
     margin: 5.31% 0% 0% 0%;
+  }
+}
+
+.myPageMainInvoices {
+  box-shadow: 1px 8px 7px 1px rgba(0, 0, 0, 0.1);
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .myPageMainInvoices {
+    padding: 6.56% 0% 6.56% 0%;
+  }
+}
+
+.invoicesForm {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .invoicesForm {
+    margin: 3% 0% 0% 0%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .invoicesForm {
+    padding: 0% 3% 0% 3%;
+  }
+}
+@media screen and (max-width: 749px) {
+  .invoicesForm {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+}
+@media screen and (max-width: 749px) and (max-width: 1024px) {
+  .invoicesForm {
+    margin: 3.12% 0% 0% 0%;
+  }
+}
+@media screen and (max-width: 749px) and (max-width: 1024px) {
+  .invoicesForm {
+    padding: 0% 3.43% 0% 3.43%;
+  }
+}
+.invoicesForm .buttonSubmitWap {
+  width: 26%;
+}
+.invoicesForm .buttonAddCheangePost {
+  height: 40px;
+  width: 70%;
+  margin-top: 0;
+  vertical-align: center;
+  background: #000;
+  border-radius: 8px;
+  /* CSS3草案 */
+  -webkit-border-radius: 8px;
+  /* Safari,Google Chrome用 */
+  -moz-border-radius: 8px;
+  /* Firefox用 */
+}
+@media screen and (max-width: 749px) {
+  .invoicesForm .buttonAddCheangePost {
+    height: 10vw;
+    width: 100%;
+  }
+}
+.invoicesForm .priceSecInvoice {
+  width: 45%;
+  font-weight: 600;
+}
+.invoicesForm .taniPriceSecInvoice {
+  width: 50%;
+  text-align: right;
+}
+.invoicesForm .yenPriceSecInvoice {
+  width: 50%;
+  text-align: right;
+}
+@media screen and (min-width: 1025px) {
+  .invoicesForm .yenPriceSecInvoice {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .invoicesForm .yenPriceSecInvoice {
+    font-size: 1.7vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .invoicesForm .yenPriceSecInvoice {
+    font-size: 5.3125vw;
   }
 }
 
