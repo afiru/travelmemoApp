@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\topics;
 
 use Illuminate\View\Component;
 
-class topics.topicsArchives extends Component
+class ichiran extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class topics.topicsArchives extends Component
      */
     public function render()
     {
-        return view('components.topics.topics-archives');
+        return view('components.topics.ichiran');
     }
 }

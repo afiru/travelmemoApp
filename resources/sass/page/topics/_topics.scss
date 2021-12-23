@@ -1,3 +1,4 @@
+//トピックス一覧
 .topicsMyPageMain {
     box-shadow: 1px 8px 7px 1px rgba(0, 0, 0, .1);
     @include paddingPercent(320 , 21 , 0 , 70 , 0);
@@ -15,8 +16,8 @@
     @include paddingPercent(320 , 11 , 10 , 0 , 10);
 }
 .timeTopics {
-    background: url(/img/timeTopics_icon.svg) no-repeat 0% center;
-    background-size: auto 80%;
+    background: url(/img/timeTopics_icon.svg) no-repeat 2% center;
+    background-size: auto 70%;
     display: block;
     width: 100%;
     font-weight: 600;
@@ -24,7 +25,7 @@
     @include rs_font_size(11px,1.1vw,3.4375vw);
     //フォント（px）【PC】:11px |【Tab】11px |【sp】 11px
     //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
-    @include paddingPercent(320 , 0 , 0 , 0 , 20);
+    @include paddingPercent(320 , 3 , 0 , 0 , 25);
 }
 .buttonTopicsArchives {
     display: block;
@@ -34,4 +35,43 @@
     &:nth-child(n+2) {
         @include marginPercent(320 , 17 , 0 , 0 , 0);
     }
+}
+.buttonMoreTopicsDel {
+    width: 40%;
+    height: 35px;
+    display: block;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    @include kadomaru(8px);
+    @include marginPercent(320 , 0 , auto , 0 , auto);
+}
+
+//トピックス詳細
+.topicsTitle {
+    @include marginPercent(320 , 10 , 0 , 10 , 0);
+    @include paddingPercent(320 , 0 , 10 , 0 , 10);
+}
+.cntTopic {
+    display: block;
+    border-top: solid 1px #C4C4C4;
+    border-bottom: solid 1px #C4C4C4;
+    @include paddingPercent(320 , 30 , 10 , 60 , 10);
+    @include rs_font_size(12px,1.2vw,3.4375vw);
+    //フォント（px）【PC】:12pxpx |【Tab】12px |【sp】 11px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.buttonMoreTopicsWap {
+    @include marginPercent(320 , 30 , 0 , 0 , 0);
+}
+.buttonMoreTopics {
+    width: 40%;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    @include kadomaru(8px);
+    @include marginPercent(320 , 0 , auto , 0 , auto);
+    @include rs_font_size(13px,1.3vw,4.0625vw);
+    //フォント（px）【PC】:13px |【Tab】13px |【sp】 13px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
 }

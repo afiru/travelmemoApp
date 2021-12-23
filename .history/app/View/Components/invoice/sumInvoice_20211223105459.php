@@ -20,11 +20,7 @@ class sumInvoice extends Component
         $this->totalPayPerson = invoice::sum('cost') / $this->intPerson;
     }
 
-    /**
-     * Get the view / contents that represent the component.
-     *
-     * @return \Illuminate\Contracts\View\View|\Closure|string
-     */
+
     public function render()
     {
         return view('components.invoice.sum-invoice');

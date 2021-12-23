@@ -3,7 +3,7 @@
 namespace App\View\Components\topics;
 
 use Illuminate\View\Component;
-
+use Illuminate\Support\Facades\Auth;
 //Model
 
 use App\Models\topic;

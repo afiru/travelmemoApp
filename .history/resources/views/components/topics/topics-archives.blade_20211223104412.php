@@ -1,5 +1,6 @@
 <article class="topicsArchives">
      <form action="/deltopics" method="post">
+        {{ $topics }}
     @if(empty($topics ))
     @else
         @csrf
@@ -30,7 +31,7 @@
 
     @if($del === true)
     <div class="buttonMoreTopicsWap">
-        <button type="submit" class="buttonMoreTopics buttonMoreTopicsDel">削除</button>
+        <button type="submit" class="buttonMoreTopics">削除</button>
     </div>
     @endif
 
