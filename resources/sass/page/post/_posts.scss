@@ -18,14 +18,24 @@
 .postsArchives{
     @include marginPercent(300 , 13 , auto , 0 , auto);
 }
-.postsArchivesFx{
-
-}
-.timeBookingArchivesFx{
-    @include paddingPercent(300 , 13 , 9 , 0 , 9);
+.postsArchivesLoop{
+    @include paddingPercent(300 , 13 , 9 , 13 , 9);
     width: 100%;
     border-bottom: 1px solid #C4C4C4;
 }
+.timeBookingArchivesFx{
+
+}
 .dateGenrePosts{
-    @include paddingPercent(300 , 0 , 9 , 13 , 9);
+
+}
+.timePosts{
+    @include rs_font_size(9px,0.9vw,2.8125vw);
+    //フォント（px）【PC】:9px |【Tab】9px |【sp】 9px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
+}
+.buttonEditoPosts{
+    @include rs_font_size(9px,0.9vw,2.8125vw);
+    //フォント（px）【PC】:9px |【Tab】9px |【sp】 9px
+    //設定サイズ（px）【PC】:1000px |【Tab】1000px |【sp】 320px
 }
