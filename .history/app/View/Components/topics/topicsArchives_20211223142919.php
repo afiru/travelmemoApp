@@ -3,7 +3,7 @@
 namespace App\View\Components\topics;
 
 use Illuminate\View\Component;
-
+use Illuminate\Support\Facades\Auth;
 //Model
 
 use App\Models\topic;
@@ -24,11 +24,12 @@ class topicsArchives extends Component
      */
     public function __construct($limit = 0, $topics=null,$haslink=false,$haspaginate=false,$del=false)
     {
-         $this->del = (boolean)$del;
+        $this->del = (boolean)$del;
         $this->limit = $limit;
         $this->haslink = $haslink;
         $this->haspaginate = $haspaginate;
         $this->topics = topic::orderBy('UPDATED_AT','desc')->paginate($this->limit);
+        print_r(topic::all());
     }
 
     /**

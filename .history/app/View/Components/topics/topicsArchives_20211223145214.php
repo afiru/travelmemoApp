@@ -8,7 +8,7 @@ use Illuminate\View\Component;
 
 use App\Models\topic;
 
-class topicsArchives extends Component
+class topicsarchives extends Component
 {
     public $limit;
     public $topics;
