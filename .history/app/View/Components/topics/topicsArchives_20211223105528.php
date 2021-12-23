@@ -24,12 +24,12 @@ class topicsArchives extends Component
      */
     public function __construct($limit = 0, $topics=null,$haslink=false,$haspaginate=false,$del=false)
     {
-        echo '---';
         $this->del = (boolean)$del;
         $this->limit = $limit;
         $this->haslink = $haslink;
         $this->haspaginate = $haspaginate;
         $this->topics = topic::orderBy('UPDATED_AT','desc')->paginate($this->limit);
+
     }
 
     /**
